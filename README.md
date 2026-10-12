@@ -1,5 +1,7 @@
 # floquet-line-design
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23315340.svg)](https://doi.org/10.5281/zenodo.23315340)
+
 Physics-guided design and verification of varactor-loaded time-varying transmission lines.
 
 It models the passive pump and signal paths of varactor-loaded time-varying transmission lines.
@@ -193,11 +195,11 @@ python scripts\check_paper_numbers.py
 
 *Physics-guided design of varactor-loaded time-varying transmission lines: pump delivery as the binding constraint*, Aiganym Abzaliyeva, Constantinos Valagiannopoulos, and Bakhtiyar Orazbayev; submitted to *Scientific Reports*.
 
-The measured data set is archived separately on Zenodo; its DOI is given in the paper's Data availability statement. That companion data deposit also holds the R1–R7 evidence rounds and maps every paper figure to its evidence file. This repository's `v1.0.1-paper` GitHub release is the code release cited by the paper; its Zenodo DOI is added when the release is made. The six worked example records under `examples/real_parts/results/` and the committed `results/` tables remain drift-guard inputs in this code release.
+The measured data set is archived separately on Zenodo; its DOI is given in the paper's Data availability statement. That companion data deposit also holds the R1–R7 evidence rounds and maps every paper figure to its evidence file. This repository's `v1.0.1-paper` GitHub release is the code release cited by the paper, archived on Zenodo as [10.5281/zenodo.23315340](https://doi.org/10.5281/zenodo.23315340) (concept DOI for all versions: [10.5281/zenodo.23315339](https://doi.org/10.5281/zenodo.23315339)). The six worked example records under `examples/real_parts/results/` and the committed `results/` tables remain drift-guard inputs in this code release.
 
 ## Citation
 
-`CITATION.cff` identifies this software release. The paper that uses it is listed under "Used in" above. The release date and the code DOI are added when the release is made.
+`CITATION.cff` identifies this software release, with its release date and its Zenodo DOI, [10.5281/zenodo.23315340](https://doi.org/10.5281/zenodo.23315340). The paper that uses it is listed under "Used in" above.
 
 ## License
 

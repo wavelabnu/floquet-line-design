@@ -4,6 +4,14 @@ type: software
 title: "floquet-line-design: physics-guided design and verification of time-varying transmission lines"
 version: 1.0.1
 date-released: "2026-10-12"
+doi: 10.5281/zenodo.23315340
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23315340
+    description: "Version DOI of this release (v1.0.1-paper)"
+  - type: doi
+    value: 10.5281/zenodo.23315339
+    description: "Concept DOI: resolves to the latest version"
 license: MIT
 repository-code: "https://github.com/wavelabnu/floquet-line-design"
 authors:
