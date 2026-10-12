@@ -1,6 +1,6 @@
 # Changelog
 
-The entries below identify the evidence rounds documented in the companion data deposit, which holds the measured data set and the R1–R7 run records cited by their `runs/…` paths. The measured data set is archived separately on Zenodo; its DOI is given in the paper's Data availability statement. The `v1.0.0-paper` public tag and GitHub release remain separately gated.
+The entries below identify the evidence rounds documented in the companion data deposit, which holds the measured data set and the R1–R7 run records cited by their `runs/…` paths. The measured data set is archived separately on Zenodo; its DOI is given in the paper's Data availability statement. This repository starts at release 1.0.1; the 1.0.0 entry and the earlier entries record the development history before it.
 
 ## 1.0.1-paper — prepared 2026-10-07
 

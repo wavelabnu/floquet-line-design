@@ -3,6 +3,7 @@ message: "If you use this software, cite this release."
 type: software
 title: "floquet-line-design: physics-guided design and verification of time-varying transmission lines"
 version: 1.0.1
+date-released: "2026-10-12"
 license: MIT
 repository-code: "https://github.com/wavelabnu/floquet-line-design"
 authors:
