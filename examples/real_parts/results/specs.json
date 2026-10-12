@@ -1,0 +1,112 @@
+{
+  "smv1245": {
+    "headline": "Fabricated SMV1245 board -- OPEN/MLEF 3-section stub with two mid-stub VIAGND, 15 cells, 0 V, 3.1 GHz",
+    "f_s_GHz": 3.1,
+    "f_pump_GHz": 6.2,
+    "n_elements": 244,
+    "n_nodes": 212,
+    "deck_lines": 259,
+    "uc_body": {
+      "MLIN": 5,
+      "MTEE": 1,
+      "L": 1,
+      "R": 1,
+      "SDD2P": 1,
+      "I_Probe": 1,
+      "MLEF": 1,
+      "VIAGND": 2
+    },
+    "structure_ok": true
+  },
+  "smv2020": {
+    "headline": "SMV2020-079LF SHORT / single VIAGND end-via, 24 cells, 16 V, 2.0 GHz (regenerative edge)",
+    "f_s_GHz": 2.0,
+    "f_pump_GHz": 4.0,
+    "n_elements": 292,
+    "n_nodes": 290,
+    "deck_lines": 307,
+    "uc_body": {
+      "MLIN": 3,
+      "MTEE": 1,
+      "L": 1,
+      "R": 1,
+      "SDD2P": 1,
+      "I_Probe": 1,
+      "VIAGND": 1
+    },
+    "structure_ok": true
+  },
+  "mavr": {
+    "headline": "MAVR-000350 COMBINED MLEF||VIAGND parallel trap, 24 cells, 12 V, 3.0 GHz (stable net-positive amplifier)",
+    "f_s_GHz": 3.0,
+    "f_pump_GHz": 6.0,
+    "n_elements": 412,
+    "n_nodes": 386,
+    "deck_lines": 427,
+    "uc_body": {
+      "MLIN": 7,
+      "MTEE": 1,
+      "L": 1,
+      "R": 1,
+      "SDD2P": 1,
+      "I_Probe": 1,
+      "MLEF": 1,
+      "VIAGND": 1
+    },
+    "structure_ok": true
+  },
+  "proxy_n2_double_short": {
+    "headline": "Optimizer-picked n2_double_short proxy amplifier -- 2-section SHORT/VIAGND (double via) + single-stub matching, 15 cells, 2.0 GHz (generalization-test design)",
+    "f_s_GHz": 2.0,
+    "f_pump_GHz": 4.0,
+    "n_elements": 218,
+    "n_nodes": 201,
+    "deck_lines": 233,
+    "uc_body": {
+      "MLIN": 4,
+      "MTEE": 1,
+      "L": 1,
+      "R": 1,
+      "SDD2P": 1,
+      "I_Probe": 1,
+      "VIAGND": 2
+    },
+    "structure_ok": true
+  },
+  "proxy_n3_single_short": {
+    "headline": "Optimizer-picked n3_single_short proxy amplifier -- 3-section SHORT, single VIAGND + single-stub matching, 15 cells, 2.0 GHz",
+    "f_s_GHz": 2.0,
+    "f_pump_GHz": 4.0,
+    "n_elements": 218,
+    "n_nodes": 216,
+    "deck_lines": 233,
+    "uc_body": {
+      "MLIN": 5,
+      "MTEE": 1,
+      "L": 1,
+      "R": 1,
+      "SDD2P": 1,
+      "I_Probe": 1,
+      "VIAGND": 1
+    },
+    "structure_ok": true
+  },
+  "proxy_n4_double_short": {
+    "headline": "Optimizer-picked n4_double_short proxy amplifier -- 4-section SHORT, double VIAGND + single-stub matching, 15 cells, 2.0 GHz",
+    "f_s_GHz": 2.0,
+    "f_pump_GHz": 4.0,
+    "n_elements": 248,
+    "n_nodes": 231,
+    "deck_lines": 263,
+    "uc_body": {
+      "MLIN": 6,
+      "MTEE": 1,
+      "L": 1,
+      "R": 1,
+      "SDD2P": 1,
+      "I_Probe": 1,
+      "VIAGND": 2
+    },
+    "structure_ok": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "cell": "proxy_n4_double_short",
+  "headline": "Optimizer-picked n4_double_short proxy amplifier -- 4-section SHORT, double VIAGND + single-stub matching, 15 cells, 2.0 GHz",
+  "f_s_GHz": 2.0,
+  "f_pump_GHz": 4.0,
+  "emit_status": "ok",
+  "n_cells": 15,
+  "element_counts_flat": {
+    "MSUB": 1,
+    "MLIN": 94,
+    "I_PROBE": 31,
+    "MTEE": 15,
+    "L": 15,
+    "R": 15,
+    "SDD2P": 15,
+    "VIAGND": 15,
+    "PORT": 1
+  },
+  "element_counts_hier": {
+    "MSUB": 1,
+    "MLIN": 94,
+    "I_PROBE": 31,
+    "PORT": 1,
+    "MTEE": 15,
+    "L": 15,
+    "R": 15,
+    "SDD2P": 15,
+    "VIAGND": 15
+  },
+  "element_counts_match": true,
+  "flat_run": "completed",
+  "hier_run": "completed",
+  "n_mix_common": 41,
+  "Vout_signal_flat": "4.114838e-03",
+  "Vout_signal_hier": "4.114838e-03",
+  "gain_delta_dB": 6.615286420555297e-13,
+  "max_abs_dV": 2.849816482246977e-15,
+  "verdict": "IDENTICAL",
+  "Vout_signal_reference": "4.114838e-03",
+  "matches_reference": true,
+  "parity_pass": true
+}

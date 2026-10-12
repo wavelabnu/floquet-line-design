@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tvtl-paper-supplement"
+version = "1.0.1"
+description = "Public supplementary material for physics-guided TVTL design."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "pandas>=2.0",
+  "PyYAML>=6.0",
+  "matplotlib>=3.5,<4.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+floquet-line-design = "tvtl.optimization.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["tvtl", "tvtl.*", "tvtl_ads_builder_v2", "tvtl_ads_builder_v2.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+

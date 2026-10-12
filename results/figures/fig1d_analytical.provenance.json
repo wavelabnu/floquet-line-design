@@ -1,0 +1,113 @@
+{
+  "panel_data": "results/figures/fig1d_analytical.csv",
+  "generated_by": "examples/figures/fig1d_dispersion.py",
+  "command": "python examples/figures/fig1d_dispersion.py",
+  "framework_call": "realistic_pumped_unit_cell_abcd(spec_smv1245(), SMV1245-079LF@0V, m_branch_pump=0.0, truncation_N=1, use_mtee_parasitic=True, tee_model_variant=None [=CORRECTED_NOTEBOOK], stub_y_fn_override=smv1245_stub_80GHz.s1p); central (n=0) 2x2 -> tvtl.theory.dispersion.bloch_dispersion(period=6.11mm)",
+  "cell": "fabricated SMV1245 board (spec_smv1245): main w=4.27mm, period p=6.11mm, MTEE branch w3=1.93mm, 3-section OPEN/MLEF stub [(1.93,6.83),(1.41,5.25),(1.98,1.04)]mm + 2 mid-stub VIAGND",
+  "varactor": "SMV1245-079LF to_realistic_varactor(v_bias_v=0.0); static C0=7.37 pF, CJ0=6.9 pF, CP=0.47 pF, L_pkg=0.7 nH, R_series=2.0 ohm",
+  "pump_off_definition": "m_branch_pump=0.0 (drive 0; harmonic blocks decouple -> LTI passive cell)",
+  "period_m": 0.00611,
+  "freq_range_GHz": [
+    0.5,
+    16.0
+  ],
+  "base_step_Hz": 4000000.0,
+  "refine_step_Hz": 1000000.0,
+  "refine_halfwin_Hz": 120000000.0,
+  "n_rows": 5322,
+  "band_edges": [
+    {
+      "f_GHz": 0.9952585398635914,
+      "kind": "zone_center_beta0",
+      "level": 1.0
+    },
+    {
+      "f_GHz": 3.037249945731711,
+      "kind": "zone_center_beta0",
+      "level": 1.0
+    },
+    {
+      "f_GHz": 9.435000528110885,
+      "kind": "zone_boundary_betaPi",
+      "level": -1.0
+    },
+    {
+      "f_GHz": 10.475436152834426,
+      "kind": "zone_boundary_betaPi",
+      "level": -1.0
+    },
+    {
+      "f_GHz": 10.501562722773736,
+      "kind": "zone_center_beta0",
+      "level": 1.0
+    },
+    {
+      "f_GHz": 10.745950191215575,
+      "kind": "zone_center_beta0",
+      "level": 1.0
+    }
+  ],
+  "band_edge_definition": "Re[(A+D)/2] crossing +1 (zone centre beta=0) or -1 (zone boundary beta=pi)",
+  "verification": {
+    "central_block_N1_vs_N6_absdiff": 2.220446049250313e-16,
+    "at_frequency_GHz": 3.1,
+    "note": "the pump-off central block is truncation-independent (drive 0 decouples the harmonics)"
+  },
+  "markers_for_fig5a": {
+    "3.1GHz": {
+      "betap_over_pi": 0.04827480254597306,
+      "alphap_Np_per_cell": 0.037653311177545994,
+      "Re_half_trace": 0.9892225158207907,
+      "Im_half_trace": 0.0056899709065021346
+    },
+    "6.2GHz": {
+      "betap_over_pi": 0.41142184938311677,
+      "alphap_Np_per_cell": 0.002395866354209472,
+      "Re_half_trace": 0.2746996168024063,
+      "Im_half_trace": 0.0023037003429410563
+    },
+    "5.3GHz": {
+      "betap_over_pi": 0.32594797817741145,
+      "alphap_Np_per_cell": 0.002640701697646466,
+      "Re_half_trace": 0.5199587643242193,
+      "Im_half_trace": 0.0022556701162047567
+    },
+    "10.6GHz": {
+      "betap_over_pi": 0.2398789884449154,
+      "alphap_Np_per_cell": 1.8005201240127386,
+      "Re_half_trace": 2.2671752345150535,
+      "Im_half_trace": 2.0143476182853868
+    }
+  },
+  "sources": [
+    {
+      "path": "examples/real_parts/real_part_designs.py",
+      "git_short_hash": "90e8805"
+    },
+    {
+      "path": "src/tvtl_ads_builder_v2/analytical/realistic_c_gain.py",
+      "git_short_hash": "d4f8bf2"
+    },
+    {
+      "path": "src/tvtl_ads_builder_v2/analytical/mtee_blocks.py",
+      "git_short_hash": "1ca4cb6"
+    },
+    {
+      "path": "src/tvtl/theory/dispersion.py",
+      "git_short_hash": "2622aa7"
+    },
+    {
+      "path": "examples/real_parts/boundary/_stub_table.py",
+      "git_short_hash": "faab370"
+    },
+    {
+      "path": "examples/real_parts/results/stub_tables/smv1245_stub_80GHz.s1p",
+      "git_short_hash": "faab370"
+    },
+    {
+      "path": "src/tvtl/varactor_palette.py",
+      "git_short_hash": "05fed45"
+    }
+  ],
+  "no_degenerate_pair_markers_on_this_panel": true
+}

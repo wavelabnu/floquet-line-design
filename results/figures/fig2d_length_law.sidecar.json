@@ -1,0 +1,91 @@
+{
+  "panel": "fig2d_length_law",
+  "generated_by": "examples/figures/fig2d_length_law.py",
+  "command": "python examples/figures/fig2d_length_law.py",
+  "palette_pinned": true,
+  "palette": {
+    "primary": "#1f77b4",
+    "accent": "#d62728",
+    "grey": "#7f7f7f",
+    "grey_dark": "#555555",
+    "reference": "#9e9e9e"
+  },
+  "style": {
+    "width_mm": 89.0,
+    "label_pt": 7.0,
+    "tick_pt": 6.0,
+    "data_lw_pt": 1.0,
+    "axis_lw_pt": 0.6,
+    "titles": "off",
+    "grid": "off"
+  },
+  "sources": [
+    {
+      "path": "results/length_sweep/sweep_table_primary.csv",
+      "git_short_hash": "616266b"
+    },
+    {
+      "path": "results/length_sweep/PROVENANCE.md",
+      "git_short_hash": "616266b"
+    }
+  ],
+  "key_values": {
+    "y_label": "pump-on/off boost (dB)",
+    "x_label": "cell count N",
+    "robust": [
+      {
+        "N": 15,
+        "boost_dB": 8.183699426003834
+      },
+      {
+        "N": 21,
+        "boost_dB": 5.727974315202998
+      },
+      {
+        "N": 24,
+        "boost_dB": 4.671639160619398
+      },
+      {
+        "N": 30,
+        "boost_dB": 5.875518216710793
+      }
+    ],
+    "SPIKE": [
+      {
+        "N": 6,
+        "boost_dB": 14.846128001252152
+      },
+      {
+        "N": 12,
+        "boost_dB": 26.49211989684104
+      },
+      {
+        "N": 18,
+        "boost_dB": 28.19657404198951
+      }
+    ],
+    "moderate": [
+      {
+        "N": 9,
+        "boost_dB": 7.695225810692552
+      },
+      {
+        "N": 27,
+        "boost_dB": 6.896859835958381
+      }
+    ],
+    "N15_robust_optimum_dB": 8.183699426003834,
+    "spot_checks": {
+      "15": 8.18,
+      "12": 26.49,
+      "18": 28.2
+    }
+  },
+  "legend_wording": {
+    "robust": "robust (smooth walk-up)",
+    "SPIKE": "SPIKE (fragile resonance)",
+    "other": "moderate"
+  },
+  "tier_sentence_path": "results/length_sweep/PROVENANCE.md",
+  "tier_sentence": "Realized numbers use the idealized proxy varactor: a faithfulness RECORD, not a real-world device gain."
+}

@@ -1,0 +1,32 @@
+{
+  "smv1245": {
+    "unit_cell": 0,
+    "top_level": 0,
+    "clean": true
+  },
+  "smv2020": {
+    "unit_cell": 0,
+    "top_level": 0,
+    "clean": true
+  },
+  "mavr": {
+    "unit_cell": 0,
+    "top_level": 0,
+    "clean": true
+  },
+  "proxy_n2_double_short": {
+    "unit_cell": 0,
+    "top_level": 0,
+    "clean": true
+  },
+  "proxy_n3_single_short": {
+    "unit_cell": 0,
+    "top_level": 0,
+    "clean": true
+  },
+  "proxy_n4_double_short": {
+    "unit_cell": 0,
+    "top_level": 0,
+    "clean": true
+  }
+}

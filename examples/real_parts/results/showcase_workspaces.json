@@ -1,0 +1,53 @@
+[
+  {
+    "key": "mavr",
+    "workspace": "examples/real_parts/outputs/TVTL_real_amplifier_MAVR_wrk",
+    "library": "real_amplifier_MAVR",
+    "top": "real_amplifier_mavr_top",
+    "baked_phase_deg": 210.0,
+    "headless_on_mV": 52.18344145709858,
+    "headless_g_mod_in_dB": 14.350654341793236,
+    "metric_ok": true,
+    "figure": "mavr_gain_vs_pump_phase.png",
+    "lib_defs_portable": true,
+    "gain_eqs": 28,
+    "renamed_nets": [
+      "n_input",
+      "n_output"
+    ]
+  },
+  {
+    "key": "smv2020",
+    "workspace": "examples/real_parts/outputs/TVTL_real_oscillator_SMV2020_wrk",
+    "library": "real_oscillator_SMV2020",
+    "top": "real_oscillator_smv2020_top",
+    "baked_phase_deg": 300.0,
+    "headless_on_mV": 30.86612747940781,
+    "headless_g_mod_in_dB": 179.7896429104572,
+    "metric_ok": true,
+    "figure": null,
+    "lib_defs_portable": true,
+    "gain_eqs": 28,
+    "renamed_nets": [
+      "n_input",
+      "n_output"
+    ]
+  },
+  {
+    "key": "smv1245",
+    "workspace": "examples/real_parts/outputs/TVTL_fabricated_SMV1245_wrk",
+    "library": "fabricated_SMV1245",
+    "top": "fabricated_smv1245_top",
+    "baked_phase_deg": 255.0,
+    "headless_on_mV": 15.037917149535305,
+    "headless_g_mod_in_dB": -6.456246244442099,
+    "metric_ok": true,
+    "figure": "smv1245_boost_vs_freq.png",
+    "lib_defs_portable": true,
+    "gain_eqs": 28,
+    "renamed_nets": [
+      "n_input",
+      "n_output"
+    ]
+  }
+]

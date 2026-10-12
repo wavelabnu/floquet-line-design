@@ -1,0 +1,36 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+*.egg-info/
+runs/
+ads_projects/
+environment_check/
+ads_smoke_projects/
+examples/*/outputs/
+examples/*/ads_static_candidates/
+examples/*/ads_static_validation/
+examples/*/sdd2p_static_equivalence/
+examples/*/ads_*_workspace/
+generated_projects/
+data/processed/
+*.wrk/
+*_workspace/
+*.ds
+*.s2p
+
+# ADS-generated simulator configuration (regenerated on every run)
+de_sim.cfg
+hpeesofsim.cfg
+
+# Compiled Python bytecode and local IDE settings
+*.pyc
+.vscode/
+.idea/
+
+# Paper-only checks and exported PDFs live in the data deposit.
+tests/test_paper_numbers.py
+results/figures/*.pdf
+examples/real_parts/results/figures/*.pdf

@@ -1,0 +1,16 @@
+{
+  "headline": "pump-on/off boost (modulation works) vs net out/in (delivery starved at 0 V)",
+  "f_signal_GHz": 3.1,
+  "f_pump_GHz": 6.2,
+  "pump_power_dBm": 29.0,
+  "signal_power_dBm": -20.0,
+  "P_avs_W": 1e-05,
+  "Vout_pump_on_V": 0.015037917149535404,
+  "Vout_pump_off_V": 0.015036401970148413,
+  "boost_dB_pump_on_over_off": 0.0008752105672637713,
+  "peak_phase_deg": 255.0,
+  "net_out_in_G_mod_in_dB": -6.456246244442042,
+  "net_positive": false,
+  "passive_S21_dB": -6.4571214550093075,
+  "lesson": "the modulation clearly works (pump-on boost > 0) but the NET out/in is negative -- pump delivery is starved across the package at 0 V bias"
+}

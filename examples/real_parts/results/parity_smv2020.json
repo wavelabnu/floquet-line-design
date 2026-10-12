@@ -1,0 +1,42 @@
+{
+  "cell": "smv2020",
+  "headline": "SMV2020-079LF SHORT / single VIAGND end-via, 24 cells, 16 V, 2.0 GHz (regenerative edge)",
+  "f_s_GHz": 2.0,
+  "f_pump_GHz": 4.0,
+  "emit_status": "ok",
+  "n_cells": 24,
+  "element_counts_flat": {
+    "MSUB": 1,
+    "I_PROBE": 49,
+    "MLIN": 72,
+    "MTEE": 24,
+    "L": 24,
+    "R": 24,
+    "SDD2P": 24,
+    "VIAGND": 24,
+    "PORT": 1
+  },
+  "element_counts_hier": {
+    "MSUB": 1,
+    "I_PROBE": 49,
+    "PORT": 1,
+    "MLIN": 72,
+    "MTEE": 24,
+    "L": 24,
+    "R": 24,
+    "SDD2P": 24,
+    "VIAGND": 24
+  },
+  "element_counts_match": true,
+  "flat_run": "completed",
+  "hier_run": "completed",
+  "n_mix_common": 41,
+  "Vout_signal_flat": "1.542714e-02",
+  "Vout_signal_hier": "1.542714e-02",
+  "gain_delta_dB": 1.2024507472945651e-06,
+  "max_abs_dV": 5.951147601394286e-09,
+  "verdict": "CLOSE",
+  "Vout_signal_reference": "1.542714e-02",
+  "matches_reference": true,
+  "parity_pass": true
+}

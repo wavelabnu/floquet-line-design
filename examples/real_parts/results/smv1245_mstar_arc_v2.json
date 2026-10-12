@@ -1,0 +1,873 @@
+{
+  "headline": "SMV1245 corrected-stub (ADS-tabulated element-accurate) junction-referenced m* arc v2",
+  "step0_reference_plane": {
+    "what_override_replaces": "the PASSIVE microstrip stub admittance y_stub looking into the stub from the varactor's bottom terminal (below SDD2P + package), plane n_c{k}_s0",
+    "cites": [
+      "realistic_c_gain.py:169-172 (y_stub=build_stub_y_fn_from_spec; z_stub_fn=1/y_stub)",
+      "realistic_c_gain.py:243 (z_stub_fn passed to tv_capacitor_harmonic_admittance_general)",
+      "realistic_c_gain.py:291 (stub_y_fn_override kwarg)"
+    ],
+    "call_signature": "level10_realistic_param_gain(spec, dev, m_branch_pump=m, truncation_N=6, stub_y_fn_override=y_stub_override)  [y_stub_override(omega)->Y_stub S; omega rad/s; conj for omega<0]"
+  },
+  "step0b_stub_table": {
+    "topology": "1-port: n_s0 -MLIN(1.93x6.83)- n_s1 [VIAGND d1.6 w1.93] -MLIN(1.41x5.25)- n_s2 [VIAGND d1.6 w1.41] -MLIN(1.98x1.04)- n_open [MLEF w1.98]; ROGERS_4003C",
+    "params_source": "real_part_designs.py:128 (_SMV1245_STUB_PARAMS_M), :129 (_SMV1245_SEC_WIDTHS_M), :143-148 (_viagnd), :82 (_OPEN=MlefOpen)",
+    "sweep": "ADS S_Param 0.05-55 GHz, 5496 pts (~0.01 step). NOTE: extended above the originally planned 15 GHz because truncation_N=6 evaluates z_stub up to 13*f_max=52 GHz; a 15 GHz table would hard-error at n>=3.",
+    "y_stub_3p1GHz_tabulated_S": [
+      2.7284802471570813e-05,
+      -0.015104225393399328
+    ],
+    "y_stub_3p1GHz_r5_tracer_S": [
+      -0.0,
+      0.05260630255764577
+    ],
+    "differ": "YES (element-accurate vs single-chain tracer that drops the 2 mid-stub VIAGND)"
+  },
+  "step1_linear_parity_gate": {
+    "S21_off_at_3p1_dB": -8.984294176945832,
+    "hb_ref_dB": -6.457,
+    "residual_S21_dB": 2.5272941769458326,
+    "deepest_notch": {
+      "f_GHz": 1.5,
+      "S21_off_dB": -98.22650261963423
+    },
+    "notch_target_GHz": 2.46,
+    "residual_notch_GHz": 0.96,
+    "gate_status": "FAIL",
+    "notch_floor_below_-60dB_artifact": true,
+    "curve": [
+      {
+        "f_GHz": 1.5,
+        "S21_off_dB": -98.22650261963423
+      },
+      {
+        "f_GHz": 1.52,
+        "S21_off_dB": -96.70301464024175
+      },
+      {
+        "f_GHz": 1.54,
+        "S21_off_dB": -95.24546710922635
+      },
+      {
+        "f_GHz": 1.56,
+        "S21_off_dB": -93.8474857771861
+      },
+      {
+        "f_GHz": 1.58,
+        "S21_off_dB": -92.50342673144777
+      },
+      {
+        "f_GHz": 1.6,
+        "S21_off_dB": -91.20827209612631
+      },
+      {
+        "f_GHz": 1.62,
+        "S21_off_dB": -89.95754311722649
+      },
+      {
+        "f_GHz": 1.64,
+        "S21_off_dB": -88.74722733014364
+      },
+      {
+        "f_GHz": 1.66,
+        "S21_off_dB": -87.5737172047935
+      },
+      {
+        "f_GHz": 1.68,
+        "S21_off_dB": -86.43375820006855
+      },
+      {
+        "f_GHz": 1.7,
+        "S21_off_dB": -85.3244045746684
+      },
+      {
+        "f_GHz": 1.72,
+        "S21_off_dB": -84.24298162516637
+      },
+      {
+        "f_GHz": 1.74,
+        "S21_off_dB": -83.18705327628695
+      },
+      {
+        "f_GHz": 1.76,
+        "S21_off_dB": -82.1543941490263
+      },
+      {
+        "f_GHz": 1.78,
+        "S21_off_dB": -81.14296539165629
+      },
+      {
+        "f_GHz": 1.8,
+        "S21_off_dB": -80.15089368600769
+      },
+      {
+        "f_GHz": 1.82,
+        "S21_off_dB": -79.17645294372882
+      },
+      {
+        "f_GHz": 1.84,
+        "S21_off_dB": -78.21804828981892
+      },
+      {
+        "f_GHz": 1.86,
+        "S21_off_dB": -77.27420199775541
+      },
+      {
+        "f_GHz": 1.88,
+        "S21_off_dB": -76.34354109517305
+      },
+      {
+        "f_GHz": 1.9,
+        "S21_off_dB": -75.4247864037882
+      },
+      {
+        "f_GHz": 1.92,
+        "S21_off_dB": -74.51674281404155
+      },
+      {
+        "f_GHz": 1.94,
+        "S21_off_dB": -73.61829062529675
+      },
+      {
+        "f_GHz": 1.96,
+        "S21_off_dB": -72.72837780757865
+      },
+      {
+        "f_GHz": 1.98,
+        "S21_off_dB": -71.84601306174329
+      },
+      {
+        "f_GHz": 2.0,
+        "S21_off_dB": -70.97025957239366
+      },
+      {
+        "f_GHz": 2.02,
+        "S21_off_dB": -70.10022936242719
+      },
+      {
+        "f_GHz": 2.04,
+        "S21_off_dB": -69.23507817028961
+      },
+      {
+        "f_GHz": 2.06,
+        "S21_off_dB": -68.37400078125432
+      },
+      {
+        "f_GHz": 2.08,
+        "S21_off_dB": -67.51622675262128
+      },
+      {
+        "f_GHz": 2.1,
+        "S21_off_dB": -66.66101647995293
+      },
+      {
+        "f_GHz": 2.12,
+        "S21_off_dB": -65.80765755748662
+      },
+      {
+        "f_GHz": 2.14,
+        "S21_off_dB": -64.95546139092235
+      },
+      {
+        "f_GHz": 2.16,
+        "S21_off_dB": -64.10376002495408
+      },
+      {
+        "f_GHz": 2.18,
+        "S21_off_dB": -63.25190315136201
+      },
+      {
+        "f_GHz": 2.2,
+        "S21_off_dB": -62.39925526626156
+      },
+      {
+        "f_GHz": 2.22,
+        "S21_off_dB": -61.545192947288825
+      },
+      {
+        "f_GHz": 2.24,
+        "S21_off_dB": -60.68910222317031
+      },
+      {
+        "f_GHz": 2.26,
+        "S21_off_dB": -59.83037600926678
+      },
+      {
+        "f_GHz": 2.28,
+        "S21_off_dB": -58.96841158335861
+      },
+      {
+        "f_GHz": 2.3,
+        "S21_off_dB": -58.102608076142424
+      },
+      {
+        "f_GHz": 2.32,
+        "S21_off_dB": -57.23236395064142
+      },
+      {
+        "f_GHz": 2.34,
+        "S21_off_dB": -56.357074443943304
+      },
+      {
+        "f_GHz": 2.36,
+        "S21_off_dB": -55.4761289434125
+      },
+      {
+        "f_GHz": 2.38,
+        "S21_off_dB": -54.588908267612695
+      },
+      {
+        "f_GHz": 2.4,
+        "S21_off_dB": -53.69478181966437
+      },
+      {
+        "f_GHz": 2.42,
+        "S21_off_dB": -52.793104577481174
+      },
+      {
+        "f_GHz": 2.44,
+        "S21_off_dB": -51.88321388119376
+      },
+      {
+        "f_GHz": 2.46,
+        "S21_off_dB": -50.96442597291649
+      },
+      {
+        "f_GHz": 2.48,
+        "S21_off_dB": -50.036032237668636
+      },
+      {
+        "f_GHz": 2.5,
+        "S21_off_dB": -49.09729508645002
+      },
+      {
+        "f_GHz": 2.52,
+        "S21_off_dB": -48.14744341297522
+      },
+      {
+        "f_GHz": 2.54,
+        "S21_off_dB": -47.185667543927686
+      },
+      {
+        "f_GHz": 2.56,
+        "S21_off_dB": -46.21111358845908
+      },
+      {
+        "f_GHz": 2.58,
+        "S21_off_dB": -45.22287707545016
+      },
+      {
+        "f_GHz": 2.6,
+        "S21_off_dB": -44.219995746099954
+      },
+      {
+        "f_GHz": 2.62,
+        "S21_off_dB": -43.201441344037164
+      },
+      {
+        "f_GHz": 2.64,
+        "S21_off_dB": -42.166110214439804
+      },
+      {
+        "f_GHz": 2.66,
+        "S21_off_dB": -41.11281248671328
+      },
+      {
+        "f_GHz": 2.68,
+        "S21_off_dB": -40.04025957125231
+      },
+      {
+        "f_GHz": 2.7,
+        "S21_off_dB": -38.94704964911996
+      },
+      {
+        "f_GHz": 2.72,
+        "S21_off_dB": -37.83165077424066
+      },
+      {
+        "f_GHz": 2.74,
+        "S21_off_dB": -36.692381142860015
+      },
+      {
+        "f_GHz": 2.76,
+        "S21_off_dB": -35.52738601969
+      },
+      {
+        "f_GHz": 2.78,
+        "S21_off_dB": -34.334610756617934
+      },
+      {
+        "f_GHz": 2.8,
+        "S21_off_dB": -33.111769323430536
+      },
+      {
+        "f_GHz": 2.82,
+        "S21_off_dB": -31.856307841887634
+      },
+      {
+        "f_GHz": 2.84,
+        "S21_off_dB": -30.56536287570897
+      },
+      {
+        "f_GHz": 2.86,
+        "S21_off_dB": -29.235714877496473
+      },
+      {
+        "f_GHz": 2.88,
+        "S21_off_dB": -27.863738617291737
+      },
+      {
+        "f_GHz": 2.9,
+        "S21_off_dB": -26.445355381033252
+      },
+      {
+        "f_GHz": 2.92,
+        "S21_off_dB": -24.975997750576422
+      },
+      {
+        "f_GHz": 2.94,
+        "S21_off_dB": -23.450609909969767
+      },
+      {
+        "f_GHz": 2.96,
+        "S21_off_dB": -21.86373083104701
+      },
+      {
+        "f_GHz": 2.98,
+        "S21_off_dB": -20.209756859481885
+      },
+      {
+        "f_GHz": 3.0,
+        "S21_off_dB": -18.483579087424577
+      },
+      {
+        "f_GHz": 3.02,
+        "S21_off_dB": -16.681986891506824
+      },
+      {
+        "f_GHz": 3.04,
+        "S21_off_dB": -14.806600023138081
+      },
+      {
+        "f_GHz": 3.06,
+        "S21_off_dB": -12.869706774672153
+      },
+      {
+        "f_GHz": 3.08,
+        "S21_off_dB": -10.905015621958416
+      },
+      {
+        "f_GHz": 3.1,
+        "S21_off_dB": -8.984294176945832
+      },
+      {
+        "f_GHz": 3.12,
+        "S21_off_dB": -7.2326854728928005
+      },
+      {
+        "f_GHz": 3.14,
+        "S21_off_dB": -5.814655301313502
+      },
+      {
+        "f_GHz": 3.16,
+        "S21_off_dB": -4.856960010630539
+      },
+      {
+        "f_GHz": 3.18,
+        "S21_off_dB": -4.353557693028613
+      },
+      {
+        "f_GHz": 3.2,
+        "S21_off_dB": -4.171178239609957
+      },
+      {
+        "f_GHz": 3.22,
+        "S21_off_dB": -4.147726573328016
+      },
+      {
+        "f_GHz": 3.24,
+        "S21_off_dB": -4.164204792400958
+      },
+      {
+        "f_GHz": 3.26,
+        "S21_off_dB": -4.154890383783919
+      },
+      {
+        "f_GHz": 3.28,
+        "S21_off_dB": -4.091388178681434
+      },
+      {
+        "f_GHz": 3.3,
+        "S21_off_dB": -3.966607697747786
+      },
+      {
+        "f_GHz": 3.32,
+        "S21_off_dB": -3.784688288304454
+      },
+      {
+        "f_GHz": 3.34,
+        "S21_off_dB": -3.5556074401512068
+      },
+      {
+        "f_GHz": 3.36,
+        "S21_off_dB": -3.2924346572185375
+      },
+      {
+        "f_GHz": 3.38,
+        "S21_off_dB": -3.009835261393927
+      },
+      {
+        "f_GHz": 3.4,
+        "S21_off_dB": -2.72302353131731
+      },
+      {
+        "f_GHz": 3.42,
+        "S21_off_dB": -2.4467528670056065
+      },
+      {
+        "f_GHz": 3.44,
+        "S21_off_dB": -2.194200041609528
+      },
+      {
+        "f_GHz": 3.46,
+        "S21_off_dB": -1.9758148064082732
+      },
+      {
+        "f_GHz": 3.48,
+        "S21_off_dB": -1.798359796747671
+      },
+      {
+        "f_GHz": 3.5,
+        "S21_off_dB": -1.6644090063542374
+      },
+      {
+        "f_GHz": 3.52,
+        "S21_off_dB": -1.5724745234958668
+      },
+      {
+        "f_GHz": 3.54,
+        "S21_off_dB": -1.5177338767323794
+      },
+      {
+        "f_GHz": 3.56,
+        "S21_off_dB": -1.4931425728882377
+      },
+      {
+        "f_GHz": 3.58,
+        "S21_off_dB": -1.4906356234970632
+      },
+      {
+        "f_GHz": 3.6,
+        "S21_off_dB": -1.5021670436029293
+      },
+      {
+        "f_GHz": 3.62,
+        "S21_off_dB": -1.5204527360324018
+      },
+      {
+        "f_GHz": 3.64,
+        "S21_off_dB": -1.5393981090992004
+      },
+      {
+        "f_GHz": 3.66,
+        "S21_off_dB": -1.5542651942309957
+      },
+      {
+        "f_GHz": 3.68,
+        "S21_off_dB": -1.5616601832796004
+      },
+      {
+        "f_GHz": 3.7,
+        "S21_off_dB": -1.559416740214068
+      },
+      {
+        "f_GHz": 3.72,
+        "S21_off_dB": -1.5464312287683089
+      },
+      {
+        "f_GHz": 3.74,
+        "S21_off_dB": -1.52248532895662
+      },
+      {
+        "f_GHz": 3.76,
+        "S21_off_dB": -1.488074977776164
+      },
+      {
+        "f_GHz": 3.78,
+        "S21_off_dB": -1.4442534302575785
+      },
+      {
+        "f_GHz": 3.8,
+        "S21_off_dB": -1.3924897748811074
+      },
+      {
+        "f_GHz": 3.82,
+        "S21_off_dB": -1.3345411886720235
+      },
+      {
+        "f_GHz": 3.84,
+        "S21_off_dB": -1.27233641697473
+      },
+      {
+        "f_GHz": 3.86,
+        "S21_off_dB": -1.2078685192158254
+      },
+      {
+        "f_GHz": 3.88,
+        "S21_off_dB": -1.143096183555151
+      },
+      {
+        "f_GHz": 3.9,
+        "S21_off_dB": -1.0798543893684998
+      },
+      {
+        "f_GHz": 3.92,
+        "S21_off_dB": -1.0197764950579744
+      },
+      {
+        "f_GHz": 3.94,
+        "S21_off_dB": -0.9642306409532687
+      },
+      {
+        "f_GHz": 3.96,
+        "S21_off_dB": -0.9142734764907658
+      },
+      {
+        "f_GHz": 3.98,
+        "S21_off_dB": -0.8706235830035864
+      },
+      {
+        "f_GHz": 4.0,
+        "S21_off_dB": -0.8336556685677967
+      }
+    ],
+    "note": "analytical-vs-MEASURED lineage gap: model notch ~2.46 vs measured board 3.1 GHz (documented, not tuned)",
+    "sanity_y_stub_3p1GHz": {
+      "tabulated_S": [
+        2.7284802471570813e-05,
+        -0.015104225393399328
+      ],
+      "r5_tracer_S": [
+        -0.0,
+        0.05260630255764577
+      ]
+    }
+  },
+  "step2_msweep_3p1GHz": [
+    {
+      "m_branch": 0.01,
+      "depth_eff_junction": 0.001459186564873633,
+      "coherent_peak_dB": 0.007858486726210161,
+      "coherent_min_dB": -0.007874019884470118,
+      "net_out_avail_at_peak_dB": -8.976435690219622,
+      "pumpoff_ref_dB": -8.984294176945832
+    },
+    {
+      "m_branch": 0.03,
+      "depth_eff_junction": 0.00437759645338225,
+      "coherent_peak_dB": 0.023529271683042176,
+      "coherent_min_dB": -0.02366907358343648,
+      "net_out_avail_at_peak_dB": -8.96076490526279,
+      "pumpoff_ref_dB": -8.984294176945832
+    },
+    {
+      "m_branch": 0.1,
+      "depth_eff_junction": 0.014593382077104356,
+      "coherent_peak_dB": 0.07790266487239353,
+      "coherent_min_dB": -0.07945645873853363,
+      "net_out_avail_at_peak_dB": -8.906391512073439,
+      "pumpoff_ref_dB": -8.984294176945832
+    },
+    {
+      "m_branch": 0.2,
+      "depth_eff_junction": 0.02919595806942318,
+      "coherent_peak_dB": 0.154351951041749,
+      "coherent_min_dB": -0.160572926970894,
+      "net_out_avail_at_peak_dB": -8.829942225904084,
+      "pumpoff_ref_dB": -8.984294176945832
+    },
+    {
+      "m_branch": 0.3,
+      "depth_eff_junction": 0.04381693913656563,
+      "coherent_peak_dB": 0.22944300717271,
+      "coherent_min_dB": -0.24346200057180867,
+      "net_out_avail_at_peak_dB": -8.754851169773122,
+      "pumpoff_ref_dB": -8.984294176945832
+    },
+    {
+      "m_branch": 0.5,
+      "depth_eff_junction": 0.07315115082209976,
+      "coherent_peak_dB": 0.3759076203294336,
+      "coherent_min_dB": -0.4150440998836823,
+      "net_out_avail_at_peak_dB": -8.608386556616399,
+      "pumpoff_ref_dB": -8.984294176945832
+    },
+    {
+      "m_branch": 0.7,
+      "depth_eff_junction": 0.10267070658547243,
+      "coherent_peak_dB": 0.5179703025591941,
+      "coherent_min_dB": -0.5952566921909807,
+      "net_out_avail_at_peak_dB": -8.466323874386639,
+      "pumpoff_ref_dB": -8.984294176945832
+    },
+    {
+      "m_branch": 0.95,
+      "depth_eff_junction": 0.13994685378550223,
+      "coherent_peak_dB": 0.6902955042743559,
+      "coherent_min_dB": -0.8345090295864516,
+      "net_out_avail_at_peak_dB": -8.293998672671476,
+      "pumpoff_ref_dB": -8.984294176945832
+    }
+  ],
+  "step3_null_referenced": {
+    "notch_f_GHz": 1.5,
+    "floor_at_notch_dB": -98.22650261963423,
+    "rows": [
+      {
+        "m_branch": 0.01,
+        "depth_eff_junction": 0.011388486283478398,
+        "coherent_peak_dB": 0.20943850681923792,
+        "coherent_min_dB": -0.23367835013951468,
+        "net_out_avail_at_peak_dB": -98.01706411281499,
+        "pumpoff_ref_dB": -98.22650261963423
+      },
+      {
+        "m_branch": 0.03,
+        "depth_eff_junction": 0.034182940745809874,
+        "coherent_peak_dB": 0.5661485822968122,
+        "coherent_min_dB": -0.7706258455640109,
+        "net_out_avail_at_peak_dB": -97.66035403733741,
+        "pumpoff_ref_dB": -98.22650261963423
+      },
+      {
+        "m_branch": 0.1,
+        "depth_eff_junction": 0.11460973887292619,
+        "coherent_peak_dB": 2.0194654564428127,
+        "coherent_min_dB": -2.1805570766569833,
+        "net_out_avail_at_peak_dB": -96.20703716319142,
+        "pumpoff_ref_dB": -98.22650261963423
+      },
+      {
+        "m_branch": 0.2,
+        "depth_eff_junction": 0.2337122591771995,
+        "coherent_peak_dB": 8.303682258052085,
+        "coherent_min_dB": 5.204461884630625,
+        "net_out_avail_at_peak_dB": -89.92282036158215,
+        "pumpoff_ref_dB": -98.22650261963423
+      },
+      {
+        "m_branch": 0.3,
+        "depth_eff_junction": 0.36229955698774763,
+        "coherent_peak_dB": 15.232867750121024,
+        "coherent_min_dB": 14.460182177035993,
+        "net_out_avail_at_peak_dB": -82.99363486951322,
+        "pumpoff_ref_dB": -98.22650261963423
+      },
+      {
+        "m_branch": 0.5,
+        "depth_eff_junction": 0.6733878305067632,
+        "coherent_peak_dB": 30.59476086363089,
+        "coherent_min_dB": 26.923799215425785,
+        "net_out_avail_at_peak_dB": -67.63174175600335,
+        "pumpoff_ref_dB": -98.22650261963423
+      },
+      {
+        "m_branch": 0.7,
+        "depth_eff_junction": 1.1167649773570598,
+        "coherent_peak_dB": 93.38662045802639,
+        "coherent_min_dB": 35.64291768627545,
+        "net_out_avail_at_peak_dB": -4.8398821616078465,
+        "pumpoff_ref_dB": -98.22650261963423
+      },
+      {
+        "m_branch": 0.95,
+        "depth_eff_junction": 2.0279051692566927,
+        "coherent_peak_dB": 94.95518633205286,
+        "coherent_min_dB": 79.97363843604867,
+        "net_out_avail_at_peak_dB": -3.271316287581371,
+        "pumpoff_ref_dB": -98.22650261963423
+      }
+    ]
+  },
+  "D16": {
+    "at_3p1GHz": {
+      "bracketed": false,
+      "m_max": 0.95,
+      "coherent_peak_at_mmax_dB": 0.6902955042743559,
+      "depth_eff_at_mmax": 0.13994685378550223,
+      "net_at_mmax_dB": -8.293998672671476
+    },
+    "at_notch": {
+      "bracketed": true,
+      "m_star": 0.312646484375,
+      "D16_depth_eff_junction": 0.3795249202239196,
+      "coherent_peak_dB": 16.03146991042123,
+      "net_out_avail_dB": -82.195032709213
+    },
+    "target_dB": 16.0
+  },
+  "step4_delivered_junction_depth": {
+    "divider_formula": "Vj = Vbt*|Zc/(Rpk+jwLpk+Zc)|, Zc=1/(jwC0), w=2pi*6.2GHz, C0=7.37pF,R=2,L=0.7nH",
+    "divider_magnitude": 0.145918503327151,
+    "junction_side_net": "n_c{k}_rp (post R_pkg) minus n_c{k}_v (SDD far side)",
+    "note_20dBm": "sqrt(P) voltage-scaled from 29dBm (flagged, not re-solved)",
+    "per_cell": [
+      {
+        "cell": 1,
+        "Vbt_V": 5.806009639609885,
+        "Vj_divider_V": 0.8472042369148858,
+        "Vj_direct_V": 0.015129150146494148,
+        "Vj_rp_V": 5.687299833259385,
+        "m_j_29dBm": 0.006879819004395284,
+        "m_j_20dBm_scaled": 0.002441051898263054
+      },
+      {
+        "cell": 2,
+        "Vbt_V": 5.212430350334432,
+        "Vj_divider_V": 0.7605900354178177,
+        "Vj_direct_V": 0.01358242728117804,
+        "Vj_rp_V": 5.105856879537247,
+        "m_j_29dBm": 0.006176463345928219,
+        "m_j_20dBm_scaled": 0.002191491893245741
+      },
+      {
+        "cell": 3,
+        "Vbt_V": 5.659857383741581,
+        "Vj_divider_V": 0.8258779184806961,
+        "Vj_direct_V": 0.0147483135477154,
+        "Vj_rp_V": 5.544135809704223,
+        "m_j_29dBm": 0.006706637639647283,
+        "m_j_20dBm_scaled": 0.002379604831284719
+      },
+      {
+        "cell": 4,
+        "Vbt_V": 5.354709747523689,
+        "Vj_divider_V": 0.7813512321099633,
+        "Vj_direct_V": 0.013953173369602946,
+        "Vj_rp_V": 5.245227228944795,
+        "m_j_29dBm": 0.006345056159156526,
+        "m_j_20dBm_scaled": 0.0022513108807076998
+      },
+      {
+        "cell": 5,
+        "Vbt_V": 5.443700678090169,
+        "Vj_divider_V": 0.7943366555079144,
+        "Vj_direct_V": 0.014185062245668381,
+        "Vj_rp_V": 5.332398648930781,
+        "m_j_29dBm": 0.0064505051421473196,
+        "m_j_20dBm_scaled": 0.002288725591753897
+      },
+      {
+        "cell": 6,
+        "Vbt_V": 5.5282694201233635,
+        "Vj_divider_V": 0.8066767997736581,
+        "Vj_direct_V": 0.014405427782516413,
+        "Vj_rp_V": 5.41523829655417,
+        "m_j_29dBm": 0.006550714010037509,
+        "m_j_20dBm_scaled": 0.0023242810398012748
+      },
+      {
+        "cell": 7,
+        "Vbt_V": 5.218615185024353,
+        "Vj_divider_V": 0.7614925172390968,
+        "Vj_direct_V": 0.013598544036614743,
+        "Vj_rp_V": 5.1119152589455075,
+        "m_j_29dBm": 0.006183792267861638,
+        "m_j_20dBm_scaled": 0.002194092292876366
+      },
+      {
+        "cell": 8,
+        "Vbt_V": 5.663684067180996,
+        "Vj_divider_V": 0.8264363024008823,
+        "Vj_direct_V": 0.014758285179787086,
+        "Vj_rp_V": 5.547884252682988,
+        "m_j_29dBm": 0.006711172132541288,
+        "m_j_20dBm_scaled": 0.002381213730076897
+      },
+      {
+        "cell": 9,
+        "Vbt_V": 5.055664780333491,
+        "Vj_divider_V": 0.7377150380700527,
+        "Vj_direct_V": 0.013173934683485534,
+        "Vj_rp_V": 4.952296541915778,
+        "m_j_29dBm": 0.0059907057118544415,
+        "m_j_20dBm_scaled": 0.0021255825975240138
+      },
+      {
+        "cell": 10,
+        "Vbt_V": 5.708866484980736,
+        "Vj_divider_V": 0.8330292531829224,
+        "Vj_direct_V": 0.014876020128723374,
+        "Vj_rp_V": 5.592142869736073,
+        "m_j_29dBm": 0.006764710839694716,
+        "m_j_20dBm_scaled": 0.002400209980217188
+      },
+      {
+        "cell": 11,
+        "Vbt_V": 5.008679120461846,
+        "Vj_divider_V": 0.7308589609037436,
+        "Vj_direct_V": 0.013051501751814335,
+        "Vj_rp_V": 4.906271551902157,
+        "m_j_29dBm": 0.0059350306473650765,
+        "m_j_20dBm_scaled": 0.002105828339196744
+      },
+      {
+        "cell": 12,
+        "Vbt_V": 5.641141035992582,
+        "Vj_divider_V": 0.8231468570294117,
+        "Vj_direct_V": 0.014699544286951563,
+        "Vj_rp_V": 5.525802136804005,
+        "m_j_29dBm": 0.006684460340606391,
+        "m_j_20dBm_scaled": 0.002371736028647974
+      },
+      {
+        "cell": 13,
+        "Vbt_V": 5.086883017727628,
+        "Vj_divider_V": 0.7422703565471168,
+        "Vj_direct_V": 0.013255282170902192,
+        "Vj_rp_V": 4.982876490515463,
+        "m_j_29dBm": 0.006027697610571146,
+        "m_j_20dBm_scaled": 0.0021387078184818727
+      },
+      {
+        "cell": 14,
+        "Vbt_V": 5.471307183511989,
+        "Vj_divider_V": 0.7983649554611594,
+        "Vj_direct_V": 0.014256998424145063,
+        "Vj_rp_V": 5.359440711111755,
+        "m_j_29dBm": 0.006483217348913417,
+        "m_j_20dBm_scaled": 0.0023003323207058854
+      },
+      {
+        "cell": 15,
+        "Vbt_V": 5.249162645245576,
+        "Vj_divider_V": 0.7659499569150234,
+        "Vj_direct_V": 0.013678143560176107,
+        "Vj_rp_V": 5.141838145099105,
+        "m_j_29dBm": 0.006219989298734861,
+        "m_j_20dBm_scaled": 0.0022069354840806863
+      }
+    ],
+    "m_j_29_mean": 0.006407331433297008,
+    "m_j_29_range": [
+      0.0059350306473650765,
+      0.006879819004395284
+    ],
+    "m_j_20_mean": 0.002273406981790934,
+    "m_j_20_range": [
+      0.002105828339196744,
+      0.002441051898263054
+    ]
+  },
+  "step5_verdict": {
+    "line": "inconsistent: D16(required,junction)=0.3795 vs delivered m_j 29dBm=0.0064 20dBm=0.0023",
+    "D16_required_junction": 0.3795249202239196,
+    "delivered_m_j_29_mean": 0.006407331433297008,
+    "delivered_m_j_20_mean": 0.002273406981790934
+  },
+  "step6_note": "D16>0.2: an S-linear twin would need the 3-6 line src edit in _branch_admittance (a separate change, not made here).",
+  "provenance": {
+    "dev": "SMV1245-079LF CJ0=6.9 VJ=3.5 M=1.7 CP=0.47 R=2.0 L_pkg=0.7nH; C0=7.37pF C1=-3.351pF/V",
+    "runner": "mstar_arc_v2_runner.py before its relocation to boundary/ (additive; 1 ADS SP run for stub + R3 HB reads)"
+  }
+}

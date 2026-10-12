@@ -1,0 +1,35 @@
+{
+  "proxy_n2_double_short": {
+    "topology": "n2_double_short",
+    "operating_pump_dBm": 6.0,
+    "nonconvergence_onset_dBm": 15.0,
+    "prediction_dB": 10.632571693309034,
+    "realized_boost_peak_dB": 2.862020881872858,
+    "realized_abs_out_in_dB": -3.9165578462250847,
+    "bounded_lobe": true,
+    "reference_vout_signal": "4.115031e-03",
+    "parity_verdict": "IDENTICAL"
+  },
+  "proxy_n3_single_short": {
+    "topology": "n3_single_short",
+    "operating_pump_dBm": 15.0,
+    "nonconvergence_onset_dBm": null,
+    "prediction_dB": 10.11182951048201,
+    "realized_boost_peak_dB": 8.183699426001148,
+    "realized_abs_out_in_dB": 1.1827149847062624,
+    "bounded_lobe": true,
+    "reference_vout_signal": "6.151059e-03",
+    "parity_verdict": "IDENTICAL"
+  },
+  "proxy_n4_double_short": {
+    "topology": "n4_double_short",
+    "operating_pump_dBm": 9.0,
+    "nonconvergence_onset_dBm": null,
+    "prediction_dB": 10.404413404370647,
+    "realized_boost_peak_dB": 2.508162447394924,
+    "realized_abs_out_in_dB": -4.5098624622460495,
+    "bounded_lobe": true,
+    "reference_vout_signal": "4.114838e-03",
+    "parity_verdict": "IDENTICAL"
+  }
+}

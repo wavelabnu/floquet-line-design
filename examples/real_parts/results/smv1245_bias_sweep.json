@@ -1,0 +1,1893 @@
+{
+  "headline": "SMV1245 fabricated-board in-silico effective-reverse-bias sweep (geometry frozen; does modest bias recover double-digit pumped boost?)",
+  "board": "fabricated SMV1245-079LF, frozen 15-cell geometry, f_pump = 2 f_signal",
+  "definition_boost": "boost_dB = coh_full_dB = 20*log10(|Sum V_(m+2n=1)|_on / |V(1,0)_off|) (full-family pump-on/off, phase-peaked)",
+  "definition_net": "net_G_mod_in_dB = 10*log10(0.5|Sum V|^2/50 / P_avs) at the boost-peak phase",
+  "conditions": {
+    "f_signal_GHz": 3.1,
+    "f_pump_GHz": 6.2,
+    "signal_power_dBm": -20.0,
+    "P_avs_W": 1e-05,
+    "n_cells": 15,
+    "phases_deg": [
+      0.0,
+      15.0,
+      30.0,
+      45.0,
+      60.0,
+      75.0,
+      90.0,
+      105.0,
+      120.0,
+      135.0,
+      150.0,
+      165.0,
+      180.0,
+      195.0,
+      210.0,
+      225.0,
+      240.0,
+      255.0,
+      270.0,
+      285.0,
+      300.0,
+      315.0,
+      330.0,
+      345.0
+    ],
+    "off_pump_power_dBm": -100.0,
+    "pump_powers_dBm": [
+      29.0,
+      20.0
+    ],
+    "biases_V": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "varactor": "SMV1245-079LF (Skyworks Si hyperabrupt); CJ0=6.9pF VJ=3.5V M=1.7 CP=0.47pF RS=2.0ohm L_package=0.7nH",
+    "geometry_frozen": true
+  },
+  "ads": {
+    "install_tag": "ADS2026_Update1.2",
+    "interpreter": "<ADS_install>/tools/python/python.exe",
+    "python": "3.13.2"
+  },
+  "generator": "bias_sweep_runner.py before its relocation to boundary/ (additive; spec_smv1245(v_bias_v=..., pump_dBm=...) x run_full_sum_gain_sweep, PHASES_24).",
+  "baseline_operating_point": {
+    "source": "results/headline_smv1245.json",
+    "boost_dB_pump_on_over_off": 0.0008752105672637713,
+    "net_out_in_G_mod_in_dB": -6.456246244442042,
+    "peak_phase_deg": 255.0,
+    "f_signal_GHz": 3.1,
+    "f_pump_GHz": 6.2,
+    "pump_power_dBm": 29.0,
+    "signal_power_dBm": -20.0,
+    "v_bias_V": 0.0
+  },
+  "cj_srf_table": [
+    {
+      "v_bias_V": 0.0,
+      "Cj_pF": 6.9,
+      "Cj_plus_Cp_pF": 7.37,
+      "SRF_Cj_GHz": 2.2900584454006445,
+      "SRF_Cj_plus_Cp_GHz": 2.215834743675223
+    },
+    {
+      "v_bias_V": 0.25,
+      "Cj_pF": 6.136371030657326,
+      "Cj_plus_Cp_pF": 6.606371030657326,
+      "SRF_Cj_GHz": 2.4283725003209,
+      "SRF_Cj_plus_Cp_GHz": 2.340397529873398
+    },
+    {
+      "v_bias_V": 0.5,
+      "Cj_pF": 5.498734880991741,
+      "Cj_plus_Cp_pF": 5.96873488099174,
+      "SRF_Cj_GHz": 2.56530921491391,
+      "SRF_Cj_plus_Cp_GHz": 2.4622376466158147
+    },
+    {
+      "v_bias_V": 0.75,
+      "Cj_pF": 4.960250220042367,
+      "Cj_plus_Cp_pF": 5.430250220042367,
+      "SRF_Cj_GHz": 2.7009672552025092,
+      "SRF_Cj_plus_Cp_GHz": 2.5814349799378586
+    },
+    {
+      "v_bias_V": 1.0,
+      "Cj_pF": 4.5009427891197635,
+      "Cj_plus_Cp_pF": 4.970942789119763,
+      "SRF_Cj_GHz": 2.8354328414569725,
+      "SRF_Cj_plus_Cp_GHz": 2.69806078178521
+    },
+    {
+      "v_bias_V": 1.5,
+      "Cj_pF": 3.762840058198269,
+      "Cj_plus_Cp_pF": 4.232840058198269,
+      "SRF_Cj_GHz": 3.1010818720674345,
+      "SRF_Cj_plus_Cp_GHz": 2.92385063128304
+    },
+    {
+      "v_bias_V": 2.0,
+      "Cj_pF": 3.1999868526168824,
+      "Cj_plus_Cp_pF": 3.6699868526168826,
+      "SRF_Cj_GHz": 3.3627688409509595,
+      "SRF_Cj_plus_Cp_GHz": 3.140066585340148
+    },
+    {
+      "v_bias_V": 3.0,
+      "Cj_pF": 2.408862772043601,
+      "Cj_plus_Cp_pF": 2.8788627720436013,
+      "SRF_Cj_GHz": 3.8758332284795127,
+      "SRF_Cj_plus_Cp_GHz": 3.545362361452401
+    }
+  ],
+  "rows": [
+    {
+      "v_bias_V": 0.0,
+      "pump_power_dBm": 29.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.0008752105672656998,
+      "peak_boost_phase_deg": 255.0,
+      "net_G_mod_in_dB_at_peak": -6.456246244442041,
+      "off_V": 0.015036401970148413,
+      "coh_2term_peak_dB": 0.0008752100726194109,
+      "correction_dB": 4.946462888811079e-10,
+      "gamma_in_sq": 0.06670096987295375,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": -0.0002806455893002587
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": -0.0004867234642936318
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": -0.0006597391284886829
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": -0.0007878973007255033
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": -0.0008624599544643109
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": -0.0008783429419363832
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": -0.0008344632287315516
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": -0.0007338128705886136
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": -0.0005832546484090563
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": -0.00039305340600141167
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": -0.00017617530262588473
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": 5.2596953325300445e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": 0.00027767227760992357
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": 0.000483713885202288
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": 0.000656684003516151
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": 0.0007847995553677953
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": 0.0008593339330918216
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": 0.0008752105672656998
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": 0.0008313481246048733
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": 0.0007307340343938957
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": 0.0005802213576955354
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": 0.00039006273626570676
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": 0.0001732129077886586
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": -5.5552994335152315e-05
+        }
+      ]
+    },
+    {
+      "v_bias_V": 0.0,
+      "pump_power_dBm": 20.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.0003108971970473196,
+      "peak_boost_phase_deg": 255.0,
+      "net_G_mod_in_dB_at_peak": -6.456810557812258,
+      "off_V": 0.015036401970148413,
+      "coh_2term_peak_dB": 0.0003108970216945037,
+      "correction_dB": 1.7535281592647584e-10,
+      "gamma_in_sq": 0.06670096987295375,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": -9.923802017770933e-05
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": -0.0001723534996487764
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": -0.00023373686693722675
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": -0.00027920437481526305
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": -0.0003056569511775809
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": -0.00031129154122435776
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": -0.0002957240768012523
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": -0.0002600156725299977
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": -0.00020660025297613077
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": -0.00013911856365680228
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": -6.216990645873582e-05
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": 1.9001439530922343e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": 9.886370123921029e-05
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": 0.00017197461472500178
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": 0.0002333522480821368
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": 0.00027881439011754987
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": 0.00030526340698613675
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": 0.0003108971970473196
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": 0.00029533190705893336
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": 0.0002596280685810552
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": 0.00020621838307616265
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": 0.0001387420594837302
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": 6.179696188931171e-05
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": -1.9373584286403395e-05
+        }
+      ]
+    },
+    {
+      "v_bias_V": 0.25,
+      "pump_power_dBm": 29.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.000785604221907287,
+      "peak_boost_phase_deg": 255.0,
+      "net_G_mod_in_dB_at_peak": -6.4407892500095345,
+      "off_V": 0.015063339253195264,
+      "coh_2term_peak_dB": 0.0007856034531011785,
+      "correction_dB": 7.68806108510621e-10,
+      "gamma_in_sq": 0.06988362135533638,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": -0.00017111044851933022
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": -0.0003648227945053376
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": -0.0005338403980356388
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": -0.0006666415144389141
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": -0.0007541723129069733
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": -0.000790464863856111
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": -0.0007730446042093226
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": -0.0007030993202604377
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": -0.0005853980350023533
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": -0.00042796537242977624
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": -0.00024153376074614104
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": -3.8811057119287644e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": 0.00016638623749905854
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": 0.0003600748918236824
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": 0.0005290577108205482
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": 0.0006618222704794211
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": 0.0007493245356485108
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": 0.000785604221907287
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": 0.0007681902125975953
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": 0.000698268620664363
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": 0.0005806021195070664
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": 0.00042320601402392024
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": 0.00023680293614901908
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": 3.409309684869273e-05
+        }
+      ]
+    },
+    {
+      "v_bias_V": 0.25,
+      "pump_power_dBm": 20.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.0002793021911047974,
+      "peak_boost_phase_deg": 255.0,
+      "net_G_mod_in_dB_at_peak": -6.441295552040338,
+      "off_V": 0.015063339253195264,
+      "coh_2term_peak_dB": 0.0002793019185386891,
+      "correction_dB": 2.7256610830124137e-10,
+      "gamma_in_sq": 0.06988362135533638,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": -6.017319663038146e-05
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": -0.00012890283752025296
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": -0.00018886902866123786
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": -0.00023598473528647335
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": -0.000267038640436666
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": -0.00027991411274464416
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": -0.000273733548300147
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": -0.00024891822072270334
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": -0.00020715955179667625
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": -0.00015130376346967727
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": -8.515779491033538e-05
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": -1.322974358990039e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": 5.957845100519911e-05
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": 0.00012830510941332456
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": 0.0001882669210602369
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": 0.0002353780255232911
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": 0.00026642833850232744
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": 0.0002793021911047974
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": 0.00027312241348177464
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": 0.0002483100687467425
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": 0.00020655577912578567
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": 0.00015070459292239495
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": 8.456221668463426e-05
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": 1.2635784837301699e-05
+        }
+      ]
+    },
+    {
+      "v_bias_V": 0.5,
+      "pump_power_dBm": 29.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.0005993338349776705,
+      "peak_boost_phase_deg": 270.0,
+      "net_G_mod_in_dB_at_peak": -6.434923463106675,
+      "off_V": 0.015073838576062369,
+      "coh_2term_peak_dB": 0.0005993328853715787,
+      "correction_dB": 9.496060917853558e-10,
+      "gamma_in_sq": 0.07289897424795648,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": -4.669711438692218e-05
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": -0.0002012799849168286
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": -0.0003423926512722335
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": -0.00046041677551341646
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": -0.0005473070505000022
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": -0.0005971400459102355
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": -0.0006065184224744412
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": -0.0005748028015863406
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": -0.0005041554059114777
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": -0.000399392481801793
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": -0.00026765560861945415
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": -0.00011792443695743626
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": 3.959579916906746e-05
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": 0.00019417009661296607
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": 0.00033526533010001943
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": 0.0004532678353034741
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": 0.0005401380939269329
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": 0.0005899580419013534
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": 0.0005993338349776705
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": 0.0005676267867773819
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": 0.0004969968236711079
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": 0.0003922555195982062
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": 0.0002605386617297104
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": 0.00011082053767792539
+        }
+      ]
+    },
+    {
+      "v_bias_V": 0.5,
+      "pump_power_dBm": 20.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.0002134773728886803,
+      "peak_boost_phase_deg": 270.0,
+      "net_G_mod_in_dB_at_peak": -6.4353093195687645,
+      "off_V": 0.015073838576062369,
+      "coh_2term_peak_dB": 0.0002134770360380887,
+      "correction_dB": 3.3685059160960297e-10,
+      "gamma_in_sq": 0.07289897424795648,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": -1.5757496396519862e-05
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": -7.060540324238597e-05
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": -0.00012067272550789336
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": -0.00016254723891725165
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": -0.000193374992412861
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": -0.00021105487394363763
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": -0.000214381864415739
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": -0.00020312920261800432
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": -0.0001780638469006501
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": -0.0001408941787248569
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": -9.415352172560885e-05
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": -4.1027426096097335e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": 1.4863488507766787e-05
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": 6.971031597953135e-05
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": 0.00011977544369942849
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": 0.00016164723509990418
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": 0.00019247246863914738
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": 0.0002101507076421776
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": 0.0002134773728886803
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": 0.00020222579055376858
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": 0.0001771626293675607
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": 0.00013999568326043753
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": 9.325754600829762e-05
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": 4.0133093018385424e-05
+        }
+      ]
+    },
+    {
+      "v_bias_V": 0.75,
+      "pump_power_dBm": 29.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.0003026503063057195,
+      "peak_boost_phase_deg": 285.0,
+      "net_G_mod_in_dB_at_peak": -6.446345581964371,
+      "off_V": 0.01505454341266953,
+      "coh_2term_peak_dB": 0.000302649159870242,
+      "correction_dB": 1.1464354775290835e-09,
+      "gamma_in_sq": 0.0754655326485799,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": 6.362706575674409e-05
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": -1.640012422370209e-05
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": -9.565511607677869e-05
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": -0.00016873662669481107
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": -0.0002306638440401555
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": -0.0002772159767284914
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": -0.0003052200410459206
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": -0.0003127672367194219
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": -0.0002993431306233729
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": -0.0002658627385440976
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": -0.0002146081208102078
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": -0.00014907274982603689
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": -7.372328556651091e-05
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": 6.304961418457074e-06
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": 8.555809409210402e-05
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": 0.00015863532648227073
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": 0.00022055699422250354
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": 0.0002671037928848138
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": 0.00029510416688744394
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": 0.0003026503063057195
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": 0.00028922805897734405
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": 0.00025575194430142506
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": 0.00020450287637902007
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": 0.00013897284005538543
+        }
+      ]
+    },
+    {
+      "v_bias_V": 0.75,
+      "pump_power_dBm": 20.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.00010854593545796188,
+      "peak_boost_phase_deg": 285.0,
+      "net_G_mod_in_dB_at_peak": -6.446539686335219,
+      "off_V": 0.01505454341266953,
+      "coh_2term_peak_dB": 0.00010854552890451128,
+      "correction_dB": 4.065534505999068e-10,
+      "gamma_in_sq": 0.0754655326485799,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": 2.3730207885349693e-05
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": -4.6656290836661605e-06
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": -3.27869996749908e-05
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": -5.871745633587566e-05
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": -8.068982699976153e-05
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": -9.7206661355158e-05
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": -0.00010714229718199924
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": -0.00010981959136304561
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": -0.00010505607638972758
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": -9.317640223287158e-05
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": -7.499020288565252e-05
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": -5.1736907016500935e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": -2.5001255845117458e-05
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": 3.3947138918064486e-06
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": 3.151585049382305e-05
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": 5.744576870844057e-05
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": 7.94174404680817e-05
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": 9.59336033219331e-05
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": 0.00010586877449034922
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": 0.00010854593545796188
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": 0.00010378265498794335
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": 9.190351951361426e-05
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": 7.371801859137078e-05
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": 5.046539442916517e-05
+        }
+      ]
+    },
+    {
+      "v_bias_V": 1.0,
+      "pump_power_dBm": 29.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.00019318735378416794,
+      "peak_boost_phase_deg": 60.0,
+      "net_G_mod_in_dB_at_peak": -6.484790337008145,
+      "off_V": 0.014988246389520971,
+      "coh_2term_peak_dB": 0.00019318936913553146,
+      "correction_dB": -2.015351363522438e-09,
+      "gamma_in_sq": 0.07722047030835522,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": 0.00011357224527139094
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": 0.0001512478114431558
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": 0.00017815469520619781
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": 0.00019245944928021657
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": 0.00019318735378416794
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": 0.00018028881052654683
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": 0.00015464271991199775
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": 0.00011799661299608667
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": 7.284762085657022e-05
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": 2.2272361169683238e-05
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": -3.0282672148647598e-05
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": -8.123594728240093e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": -0.00012711496756851617
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": -0.00016479294778905975
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": -0.00019170195546591847
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": -0.00020600797269924062
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": -0.00020673594233764486
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": -0.00019383624865342212
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": -0.00016818809932225067
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": -0.00013153957779342136
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": -8.638846214414656e-05
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": -3.581193911280923e-05
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": 1.6743158932085156e-05
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": 6.76952836334544e-05
+        }
+      ]
+    },
+    {
+      "v_bias_V": 1.0,
+      "pump_power_dBm": 20.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 7.00923133757115e-05,
+      "peak_boost_phase_deg": 60.0,
+      "net_G_mod_in_dB_at_peak": -6.484913432048554,
+      "off_V": 0.014988246389520971,
+      "coh_2term_peak_dB": 7.009302880255696e-05,
+      "correction_dB": -7.154268454647719e-10,
+      "gamma_in_sq": 0.07722047030835522,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": 4.1846670332411424e-05
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": 5.5213641722319585e-05
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": 6.47598079455779e-05
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": 6.983464040380852e-05
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": 7.00923133757115e-05
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": 6.551526812248697e-05
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": 5.6415407932317084e-05
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": 4.3412847335587875e-05
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": 2.7393659214940044e-05
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": 9.449497597070377e-06
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": -9.19678804943777e-06
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": -2.7274484961652247e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": -4.35516137062725e-05
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": -5.691888876805477e-05
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": -6.646532238889635e-05
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": -7.154031393807181e-05
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": -7.179799527081847e-05
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": -6.722080510783016e-05
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": -5.812068558776647e-05
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": -4.5117821052044504e-05
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": -2.9098365500063326e-05
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": -1.1154044931076118e-05
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": 7.492248905590827e-06
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": 2.5569800945648938e-05
+        }
+      ]
+    },
+    {
+      "v_bias_V": 1.5,
+      "pump_power_dBm": 29.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.0015611277316581993,
+      "peak_boost_phase_deg": 105.0,
+      "net_G_mod_in_dB_at_peak": -6.691965983295985,
+      "off_V": 0.014632672226089351,
+      "coh_2term_peak_dB": 0.001561130538548147,
+      "correction_dB": -2.806889947684285e-09,
+      "gamma_in_sq": 0.07661843390010784,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": -0.0002381391801381454
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": 0.00017487174943694206
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": 0.0005752466047918052
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": 0.0009357075990022171
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": 0.0012317026094563303
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": 0.001443074959640174
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": 0.0015554330733895405
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": 0.0015611277316581993
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": 0.0014597712641223639
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": 0.0012582638568152177
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": 0.0009703252169449359
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": 0.0006155629934161977
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": 0.00021814053789532496
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": -0.00019486627688597837
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": -0.0005953121363009604
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": -0.0009559002297829611
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": -0.00125204437591809
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": -0.0014635479386187653
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": -0.0015759841833683588
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": -0.0015816829565584805
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": -0.001480255483667698
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": -0.0012786209786173363
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": -0.0009905332036365291
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": -0.0006356397669918858
+        }
+      ]
+    },
+    {
+      "v_bias_V": 1.5,
+      "pump_power_dBm": 20.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.0005562588800214937,
+      "peak_boost_phase_deg": 105.0,
+      "net_G_mod_in_dB_at_peak": -6.692970852147622,
+      "off_V": 0.014632672226089351,
+      "coh_2term_peak_dB": 0.0005562598767694598,
+      "correction_dB": -9.96747966065456e-10,
+      "gamma_in_sq": 0.07661843390010784,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": -8.220434589366744e-05
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": 6.433627942050266e-05
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": 0.00020640199390858393
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": 0.0003343121472958541
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": 0.0004393514721624708
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": 0.0005143635879622152
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": 0.0005542381923652976
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": 0.0005562588800214937
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": 0.0005202879953103856
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": 0.0004487760023370133
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": 0.0003465947270384879
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": 0.00022070577892143177
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": 7.968663163882711e-05
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": -6.685347581340958e-05
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": -0.00020892812929834665
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": -0.0003368542829416097
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": -0.0004419123831980432
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": -0.0005169410171939219
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": -0.0005568254578887105
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": -0.0005588466631378142
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": -0.0005228668396361173
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": -0.0004513388459360494
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": -0.0003491387956508016
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": -0.00022323332893942554
+        }
+      ]
+    },
+    {
+      "v_bias_V": 2.0,
+      "pump_power_dBm": 29.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.0036716661024744756,
+      "peak_boost_phase_deg": 120.0,
+      "net_G_mod_in_dB_at_peak": -7.1615015178333605,
+      "off_V": 0.013859301440711352,
+      "coh_2term_peak_dB": 0.0036716690869131943,
+      "correction_dB": -2.9844387187255572e-09,
+      "gamma_in_sq": 0.06841334475627253,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": -0.0016868515207878775
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": -0.0007791218532059248
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": 0.00018080838026031195
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": 0.0011275088511838952
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": 0.0019964925066834637
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": 0.002728602457695969
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": 0.0032740265599709214
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": 0.003595670624007314
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": 0.0036716661024744756
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": 0.003496846764614329
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": 0.0030830973605431443
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": 0.0024585514225427063
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": 0.001665690814518336
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": 0.0007584720509968137
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": -0.00020133049421004905
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": -0.0011483207055354592
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": -0.0020179338943041303
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": -0.002750844488847648
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": -0.0032970258139357863
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": -0.0036191807813905196
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": -0.0036953039491999457
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": -0.003520194870804201
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": -0.003105815932077839
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": -0.0024804693503374053
+        }
+      ]
+    },
+    {
+      "v_bias_V": 2.0,
+      "pump_power_dBm": 20.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.0013054643685851725,
+      "peak_boost_phase_deg": 120.0,
+      "net_G_mod_in_dB_at_peak": -7.163867719567248,
+      "off_V": 0.013859301440711352,
+      "coh_2term_peak_dB": 0.0013054654295099337,
+      "correction_dB": -1.060924761236981e-09,
+      "gamma_in_sq": 0.06841334475627253,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": -0.00059609443247489
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": -0.00027407734726911013
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": 6.650494789938942e-05
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": 0.0004024407307552503
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": 0.0007108401802893593
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": 0.0009706943017423964
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": 0.0011643045338250988
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": 0.0012784861788793728
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": 0.0013054643685851725
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": 0.001243402188789441
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": 0.0010965254325055456
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": 0.000874835594069849
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": 0.0005934304035097528
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": 0.0002714776373738739
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": -6.908858336408115e-05
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": -0.00040506084297220533
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": -0.0007135395466576421
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": -0.0009734944634382372
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": -0.0011672000247297417
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": -0.0012814459886071657
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": -0.0013084402530434388
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": -0.0012463415962715753
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": -0.001099385585915366
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": -0.0008775949519061578
+        }
+      ]
+    },
+    {
+      "v_bias_V": 3.0,
+      "pump_power_dBm": 29.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.008976563533290327,
+      "peak_boost_phase_deg": 150.0,
+      "net_G_mod_in_dB_at_peak": -9.021158723551292,
+      "off_V": 0.011181324089759005,
+      "coh_2term_peak_dB": 0.00897656402962948,
+      "correction_dB": -4.9633915380487e-10,
+      "gamma_in_sq": 0.036381025844907856,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": -0.008010921905972787
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": -0.006679506572679246
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": -0.004892597035707074
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": -0.002772444217325303
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": -0.00046390678498391396
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": 0.0018755207835844624
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": 0.004086486781704993
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": 0.0060186209655450715
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": 0.007540700521588511
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": 0.008549472484497849
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": 0.008976563533290327
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": 0.008793040009183706
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": 0.00801133385256833
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": 0.006684415353674887
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": 0.0049022638187611305
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": 0.0027858552669077956
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": 0.00047904509576278696
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": -0.0018611350317415797
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": -0.004075131763252092
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": -0.006011762775175515
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": -0.007538600336503333
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": -0.008551116575865327
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": -0.008979934892696733
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": -0.00879565880623107
+        }
+      ]
+    },
+    {
+      "v_bias_V": 3.0,
+      "pump_power_dBm": 20.0,
+      "all_phases_converged": true,
+      "peak_boost_dB": 0.00318541577512272,
+      "peak_boost_phase_deg": 150.0,
+      "net_G_mod_in_dB_at_peak": -9.026949871309458,
+      "off_V": 0.011181324089759005,
+      "coh_2term_peak_dB": 0.003185415953290156,
+      "correction_dB": -1.78167436099691e-10,
+      "gamma_in_sq": 0.036381025844907856,
+      "boost_curve": [
+        {
+          "phase_deg": 0.0,
+          "boost_dB": -0.0028424505792828242
+        },
+        {
+          "phase_deg": 15.0,
+          "boost_dB": -0.002370557375460201
+        },
+        {
+          "phase_deg": 30.0,
+          "boost_dB": -0.001737077152473722
+        },
+        {
+          "phase_deg": 45.0,
+          "boost_dB": -0.0009852404117747468
+        },
+        {
+          "phase_deg": 60.0,
+          "boost_dB": -0.00016633066221229107
+        },
+        {
+          "phase_deg": 75.0,
+          "boost_dB": 0.0006638230744822921
+        },
+        {
+          "phase_deg": 90.0,
+          "boost_dB": 0.0014486567136622467
+        },
+        {
+          "phase_deg": 105.0,
+          "boost_dB": 0.0021347232867894115
+        },
+        {
+          "phase_deg": 120.0,
+          "boost_dB": 0.002675325033978946
+        },
+        {
+          "phase_deg": 135.0,
+          "boost_dB": 0.003033680631968397
+        },
+        {
+          "phase_deg": 150.0,
+          "boost_dB": 0.00318541577512272
+        },
+        {
+          "phase_deg": 165.0,
+          "boost_dB": 0.0031202116579161186
+        },
+        {
+          "phase_deg": 180.0,
+          "boost_dB": 0.0028425023813616456
+        },
+        {
+          "phase_deg": 195.0,
+          "boost_dB": 0.0023711753049547772
+        },
+        {
+          "phase_deg": 210.0,
+          "boost_dB": 0.0017382940885654462
+        },
+        {
+          "phase_deg": 225.0,
+          "boost_dB": 0.0009869287300365373
+        },
+        {
+          "phase_deg": 240.0,
+          "boost_dB": 0.0001682364326569136
+        },
+        {
+          "phase_deg": 255.0,
+          "boost_dB": -0.0006620120489148121
+        },
+        {
+          "phase_deg": 270.0,
+          "boost_dB": -0.0014472272426021445
+        },
+        {
+          "phase_deg": 285.0,
+          "boost_dB": -0.0021338599431668685
+        },
+        {
+          "phase_deg": 300.0,
+          "boost_dB": -0.0026750606970738946
+        },
+        {
+          "phase_deg": 315.0,
+          "boost_dB": -0.0030338876774187156
+        },
+        {
+          "phase_deg": 330.0,
+          "boost_dB": -0.003185840272490176
+        },
+        {
+          "phase_deg": 345.0,
+          "boost_dB": -0.003120541410341982
+        }
+      ]
+    }
+  ]
+}

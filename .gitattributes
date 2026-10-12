@@ -1,0 +1,30 @@
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+*.npz binary
+*.ds binary
+*.hbs binary
+*.raw binary
+*.gz binary
+*.wrk binary
+*.ckt text
+*.csv text
+*.json text
+*.md text
+*.py text
+*.txt text
+*.yaml text
+*.cff text
+
+# Historical drift-guard SHA256 pins record CRLF worktree bytes.
+examples/real_parts/results/headline_smv1245.json text eol=crlf
+examples/real_parts/results/headline_mavr.json text eol=crlf
+examples/real_parts/results/headline_smv2020.json text eol=crlf
+examples/real_parts/results/proxy_analysis_summary.json text eol=crlf
+results/theoretical_leg/report.md text eol=crlf
+results/theoretical_leg/candidates.csv text eol=crlf
+results/theoretical_leg/candidates.json text eol=crlf
+results/theoretical_leg/summary.json text eol=crlf
+
+# Measured-data fixture kept byte-identical to its data-deposit copy (SHA-256 f06d016c..., CRLF).
+tests/fixtures/measured_dispersion/dispersion_from_fft_ridge_smooth_b.csv -text

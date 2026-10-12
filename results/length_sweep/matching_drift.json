@@ -1,0 +1,1008 @@
+{
+  "N_grid": [
+    6,
+    9,
+    12,
+    15,
+    18,
+    21,
+    24,
+    27,
+    30
+  ],
+  "N_ref": 15,
+  "designs": {
+    "proxy_n3_single_short": {
+      "key": "proxy_n3_single_short",
+      "rows": [
+        {
+          "n_cells": 6,
+          "z_in_ohm": [
+            14.373117241931492,
+            -9.442475711269603
+          ],
+          "z_out_ohm": [
+            14.392032096678863,
+            -9.557744523846926
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 10.007162950484256,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 13.728088117280992,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 10.043784596622613,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 13.725679055136414,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 9,
+          "z_in_ohm": [
+            9.302877524104131,
+            6.432547180486597
+          ],
+          "z_out_ohm": [
+            9.302902402052947,
+            6.312916501649656
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 3.9604609024498134,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.86488723134078,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 3.997542873588305,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.862184979870953,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 12,
+          "z_in_ohm": [
+            9.38043663045339,
+            -3.577434684126208
+          ],
+          "z_out_ohm": [
+            9.389479179080837,
+            -3.6952178668433695
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 7.021629233635827,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.777501595165948,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 7.05868751461276,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.774814299504094,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 15,
+          "z_in_ohm": [
+            14.910305110455942,
+            4.1260139324073455
+          ],
+          "z_out_ohm": [
+            14.90981663899466,
+            4.014148927232914
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.946280009526298,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 13.304131813887988,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.9828321441045835,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 13.30177125269822,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 18,
+          "z_in_ohm": [
+            9.092695186813907,
+            -0.08526344215724221
+          ],
+          "z_out_ohm": [
+            9.098527203299453,
+            -0.2028195021152537
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.900398351376707,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.890256517192107,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.937487301978376,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.887549850562815,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 21,
+          "z_in_ohm": [
+            14.502847798372951,
+            -0.18225518413954286
+          ],
+          "z_out_ohm": [
+            14.508586835533823,
+            -0.2935930390267267
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 7.257919956175673,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 13.434598686332825,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 7.294492912651683,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 13.432223322175696,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 24,
+          "z_in_ohm": [
+            10.418660949879145,
+            1.669379737968302
+          ],
+          "z_out_ohm": [
+            10.4226775541311,
+            1.5528707033271236
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.729391333279558,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.275374901692729,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.76632317496469,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.27276687194059,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 27,
+          "z_in_ohm": [
+            12.299743880368254,
+            -0.90649319046402
+          ],
+          "z_out_ohm": [
+            12.306441763132904,
+            -1.0207055997094083
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 6.990467207634342,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 14.41515839543059,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 7.027214192430541,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 14.412666824471907,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 30,
+          "z_in_ohm": [
+            11.927881675542004,
+            1.709236816439695
+          ],
+          "z_out_ohm": [
+            11.931535328021534,
+            1.5943478655645604
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 6.090080191187517,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 14.587431101954737,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 6.126861449333965,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 14.584917662961583,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        }
+      ],
+      "drift_vs_N15": [
+        {
+          "n_cells": 6,
+          "dZ_in_ohm": 13.579119338773719,
+          "dZ_out_ohm": 13.58176692038724
+        },
+        {
+          "n_cells": 9,
+          "dZ_in_ohm": 6.06327797158223,
+          "dZ_out_ohm": 6.059853102312752
+        },
+        {
+          "n_cells": 12,
+          "dZ_in_ohm": 9.482750971827661,
+          "dZ_out_ohm": 9.482007278890574
+        },
+        {
+          "n_cells": 15,
+          "dZ_in_ohm": 0.0,
+          "dZ_out_ohm": 0.0
+        },
+        {
+          "n_cells": 18,
+          "dZ_in_ohm": 7.1818829250537,
+          "dZ_out_ohm": 7.180104988058452
+        },
+        {
+          "n_cells": 21,
+          "dZ_in_ohm": 4.327493990956152,
+          "dZ_out_ohm": 4.326387199853903
+        },
+        {
+          "n_cells": 24,
+          "dZ_in_ohm": 5.119562367090649,
+          "dZ_out_ohm": 5.117842090411057
+        },
+        {
+          "n_cells": 27,
+          "dZ_in_ohm": 5.669317232064897,
+          "dZ_out_ohm": 5.668096757443348
+        },
+        {
+          "n_cells": 30,
+          "dZ_in_ohm": 3.8387056638128394,
+          "dZ_out_ohm": 3.837394525631042
+        }
+      ],
+      "max_dZ_in_ohm": 13.579119338773719,
+      "max_dZ_out_ohm": 13.58176692038724,
+      "verdict": "N-DEPENDENT (drift up to 13.6 ohm) -- FREEZE N=15 match across sweep"
+    },
+    "n3_double_combined": {
+      "key": "n3_double_combined",
+      "rows": [
+        {
+          "n_cells": 6,
+          "z_in_ohm": [
+            10.396526004191877,
+            -5.760978175270423
+          ],
+          "z_out_ohm": [
+            10.412996308604127,
+            -5.900455747705504
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 7.943014103828326,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.345804389717546,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 7.987552047889033,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.341472786839345,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 9,
+          "z_in_ohm": [
+            6.499963335977865,
+            3.8726200530544337
+          ],
+          "z_out_ohm": [
+            6.5067620861884405,
+            3.7297977762186503
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 3.88346035635177,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 17.187316058612435,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 3.928946539165649,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 17.18236635474858,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 12,
+          "z_in_ohm": [
+            7.13843197004785,
+            -1.836457343856404
+          ],
+          "z_out_ohm": [
+            7.149578986747701,
+            -1.9778520122316
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.807946194835805,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 16.84731141169678,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.853216823592537,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 16.842508400086338,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 15,
+          "z_in_ohm": [
+            9.281783149802829,
+            2.250577710556265
+          ],
+          "z_out_ohm": [
+            9.288888576793735,
+            2.1108837574974695
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.2445931061512185,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.809897221554683,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.289326783282513,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.805442807841324,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 18,
+          "z_in_ohm": [
+            6.974430646786316,
+            0.08853350420711521
+          ],
+          "z_out_ohm": [
+            6.983986065997513,
+            -0.05289296761612093
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.183018894240663,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 16.925009755946828,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.228336737142169,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 16.920174970099463,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 21,
+          "z_in_ohm": [
+            9.086123836499564,
+            0.5011825655997239
+          ],
+          "z_out_ohm": [
+            9.095109324413844,
+            0.361673283624432
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.721461220672767,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.893809940304347,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.766232821811345,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 15.889331559413034,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 24,
+          "z_in_ohm": [
+            7.5655917087967515,
+            0.8434834563871688
+          ],
+          "z_out_ohm": [
+            7.574455061350506,
+            0.7024737479433452
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.1543465442949925,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 16.630527352643753,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.19949127611877,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 16.62580811049209,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 27,
+          "z_in_ohm": [
+            8.358759958167596,
+            0.175496774805311
+          ],
+          "z_out_ohm": [
+            8.368145149582592,
+            0.035289077621849796
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.603981855766092,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 16.24169196088063,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.6489200768700725,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 16.23710727267315,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "n_cells": 30,
+          "z_in_ohm": [
+            8.063535482380647,
+            0.858126574915002
+          ],
+          "z_out_ohm": [
+            8.072310281291632,
+            0.7175608005868834
+          ],
+          "input": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.3078966949973845,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 16.38610743321844,
+                "z0_ohm": 50.0
+              }
+            ]
+          },
+          "output": {
+            "needed": true,
+            "topology": "single_stub",
+            "s11_after_dB": -240.0,
+            "elements": [
+              {
+                "kind": "series_line",
+                "w_mm": 3.514575318626239,
+                "l_mm": 5.352908927197757,
+                "z0_ohm": 50.0
+              },
+              {
+                "kind": "shunt_open_stub",
+                "w_mm": 3.514575318626239,
+                "l_mm": 16.38147490898779,
+                "z0_ohm": 50.0
+              }
+            ]
+          }
+        }
+      ],
+      "drift_vs_N15": [
+        {
+          "n_cells": 6,
+          "dZ_in_ohm": 8.088737809024082,
+          "dZ_out_ohm": 8.089819457833514
+        },
+        {
+          "n_cells": 9,
+          "dZ_in_ohm": 3.2201774543410027,
+          "dZ_out_ohm": 3.2188678770244192
+        },
+        {
+          "n_cells": 12,
+          "dZ_in_ohm": 4.614955017739071,
+          "dZ_out_ohm": 4.614586191277057
+        },
+        {
+          "n_cells": 15,
+          "dZ_in_ohm": 0.0,
+          "dZ_out_ohm": 0.0
+        },
+        {
+          "n_cells": 18,
+          "dZ_in_ohm": 3.1620105508022096,
+          "dZ_out_ohm": 3.1614087525054426
+        },
+        {
+          "n_cells": 21,
+          "dZ_in_ohm": 1.7603027978390033,
+          "dZ_out_ohm": 1.759911270649758
+        },
+        {
+          "n_cells": 24,
+          "dZ_in_ohm": 2.2192853134056922,
+          "dZ_out_ohm": 2.218761148453631
+        },
+        {
+          "n_cells": 27,
+          "dZ_in_ohm": 2.271108254181986,
+          "dZ_out_ohm": 2.2706522705778833
+        },
+        {
+          "n_cells": 30,
+          "dZ_in_ohm": 1.8501479790352526,
+          "dZ_out_ohm": 1.8497058175128447
+        }
+      ],
+      "max_dZ_in_ohm": 8.088737809024082,
+      "max_dZ_out_ohm": 8.089819457833514,
+      "verdict": "N-DEPENDENT (drift up to 8.1 ohm) -- FREEZE N=15 match across sweep"
+    }
+  }
+}

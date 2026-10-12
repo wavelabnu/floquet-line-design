@@ -1,0 +1,895 @@
+{
+  "design": "secondary",
+  "key": "n3_double_combined",
+  "n_cells": 21,
+  "f_signal_GHz": 2.0,
+  "f_pump_GHz": 4.0,
+  "matching": "frozen@N15",
+  "prediction": {
+    "n_cells": 21,
+    "ok": true,
+    "pred_coh_pk_dB": 38.49918273351638,
+    "pred_g_mod_in_dB": 16.24315141779474,
+    "pred_psa_swing_dB": 85.08178348840077,
+    "depth_effective": 0.22000000000000003,
+    "note": ""
+  },
+  "P_avs_W": 1e-06,
+  "off_converged": true,
+  "Vout_passive_pumpoff_V": 0.002293453499668014,
+  "passive_insertion_loss_dB": -12.790201217396584,
+  "pump_scan": [
+    {
+      "pump_dBm": -6.0,
+      "converged": true,
+      "wall_s": 0.9,
+      "boost_dB": 0.0655259257480103,
+      "abs_gain_dB": -12.724675291648575,
+      "mix10_dB": -0.37033624045294483,
+      "vout_sig_on_V": 0.0021977238797496407
+    },
+    {
+      "pump_dBm": -3.0,
+      "converged": true,
+      "wall_s": 1.2,
+      "boost_dB": -6.948952574265146,
+      "abs_gain_dB": -19.73915379166173,
+      "mix10_dB": -5.224819129549624,
+      "vout_sig_on_V": 0.0012567502568299087
+    },
+    {
+      "pump_dBm": 0.0,
+      "converged": true,
+      "wall_s": 1.2,
+      "boost_dB": -16.389784121851946,
+      "abs_gain_dB": -29.17998533924853,
+      "mix10_dB": -15.949507073668856,
+      "vout_sig_on_V": 0.000365607070039681
+    },
+    {
+      "pump_dBm": 3.0,
+      "converged": true,
+      "wall_s": 1.2,
+      "boost_dB": -25.51106648226527,
+      "abs_gain_dB": -38.30126769966186,
+      "mix10_dB": -28.853643196668273,
+      "vout_sig_on_V": 8.275757938479926e-05
+    },
+    {
+      "pump_dBm": 6.0,
+      "converged": true,
+      "wall_s": 1.2,
+      "boost_dB": -49.18165857054448,
+      "abs_gain_dB": -61.971859787941064,
+      "mix10_dB": -43.272007313871484,
+      "vout_sig_on_V": 1.5735827041355703e-05
+    },
+    {
+      "pump_dBm": 9.0,
+      "converged": true,
+      "wall_s": 1.2,
+      "boost_dB": -52.13170589345049,
+      "abs_gain_dB": -64.92190711084707,
+      "mix10_dB": -43.440038169127426,
+      "vout_sig_on_V": 1.5434338850953236e-05
+    },
+    {
+      "pump_dBm": 12.0,
+      "converged": true,
+      "wall_s": 1.2,
+      "boost_dB": -46.567747925401406,
+      "abs_gain_dB": -59.35794914279799,
+      "mix10_dB": -41.56778927953002,
+      "vout_sig_on_V": 1.914698844322573e-05
+    },
+    {
+      "pump_dBm": 15.0,
+      "converged": true,
+      "wall_s": 1.2,
+      "boost_dB": -39.00019470751214,
+      "abs_gain_dB": -51.79039592490873,
+      "mix10_dB": -37.79850652752668,
+      "vout_sig_on_V": 2.955048497147101e-05
+    },
+    {
+      "pump_dBm": 18.0,
+      "converged": true,
+      "wall_s": 2.3,
+      "boost_dB": -28.12612618632416,
+      "abs_gain_dB": -40.91632740372074,
+      "mix10_dB": -30.77770636248554,
+      "vout_sig_on_V": 6.631390778177447e-05
+    },
+    {
+      "pump_dBm": 21.0,
+      "converged": true,
+      "wall_s": 11.6,
+      "boost_dB": 14.267123029465768,
+      "abs_gain_dB": 1.4769218120691834,
+      "mix10_dB": 8.817375752087887,
+      "vout_sig_on_V": 0.006329344386249789
+    }
+  ],
+  "nonconvergence_onset_dBm": null,
+  "phase0_boost_collapse_dBm": -3.0,
+  "phase_sweeps": [
+    {
+      "pump_dBm": 21.0,
+      "rows": [
+        {
+          "phase_deg": 0.0,
+          "converged": true,
+          "coh_full_dB": 14.267104280864265,
+          "coh_2term_dB": 13.955862747655,
+          "mix10_dB": 8.817300384607318,
+          "full_sum_mag": 0.011853460400602086
+        },
+        {
+          "phase_deg": 45.0,
+          "converged": false
+        },
+        {
+          "phase_deg": 90.0,
+          "converged": false
+        },
+        {
+          "phase_deg": 135.0,
+          "converged": true,
+          "coh_full_dB": 13.923414637060194,
+          "coh_2term_dB": 13.548816305183514,
+          "mix10_dB": 8.641914889685061,
+          "full_sum_mag": 0.011393592196676816
+        },
+        {
+          "phase_deg": 180.0,
+          "converged": false
+        },
+        {
+          "phase_deg": 225.0,
+          "converged": true,
+          "coh_full_dB": 11.118341767817663,
+          "coh_2term_dB": 11.822053336351132,
+          "mix10_dB": 8.795857599333582,
+          "full_sum_mag": 0.008249108720939192
+        },
+        {
+          "phase_deg": 270.0,
+          "converged": false
+        },
+        {
+          "phase_deg": 315.0,
+          "converged": false
+        }
+      ],
+      "all_phases_converged": false,
+      "peak_dB": 14.267104280864265,
+      "peak_phase_deg": 0.0,
+      "trough_dB": 11.118341767817663,
+      "swing_dB": 3.148762513046602,
+      "abs_out_in_dB": 1.4769030634676805,
+      "gamma_in_sq": 0.5941909513785019
+    },
+    {
+      "pump_dBm": 18.0,
+      "rows": [
+        {
+          "phase_deg": 0.0,
+          "converged": true,
+          "coh_full_dB": -28.126126186327504,
+          "coh_2term_dB": -28.125322650191524,
+          "mix10_dB": -30.777706362486693,
+          "full_sum_mag": 8.998779904577077e-05
+        },
+        {
+          "phase_deg": 45.0,
+          "converged": true,
+          "coh_full_dB": -31.265844880771162,
+          "coh_2term_dB": -31.266583958540636,
+          "mix10_dB": -25.662135301335766,
+          "full_sum_mag": 6.268991703581603e-05
+        },
+        {
+          "phase_deg": 90.0,
+          "converged": true,
+          "coh_full_dB": -39.85347721391494,
+          "coh_2term_dB": -39.85650959702091,
+          "mix10_dB": -36.313345393501855,
+          "full_sum_mag": 2.3324700635512195e-05
+        },
+        {
+          "phase_deg": 135.0,
+          "converged": true,
+          "coh_full_dB": -22.709084675901575,
+          "coh_2term_dB": -22.709433494458477,
+          "mix10_dB": -27.29594625707573,
+          "full_sum_mag": 0.0001678942045950796
+        },
+        {
+          "phase_deg": 180.0,
+          "converged": true,
+          "coh_full_dB": -23.398412289038887,
+          "coh_2term_dB": -23.39676856672024,
+          "mix10_dB": -26.90549041897863,
+          "full_sum_mag": 0.00015508483227059998
+        },
+        {
+          "phase_deg": 225.0,
+          "converged": true,
+          "coh_full_dB": -45.09491416466058,
+          "coh_2term_dB": -45.09284725031765,
+          "mix10_dB": -37.928612194506215,
+          "full_sum_mag": 1.2756872968617774e-05
+        },
+        {
+          "phase_deg": 270.0,
+          "converged": true,
+          "coh_full_dB": -25.962871342809105,
+          "coh_2term_dB": -25.96253873061935,
+          "mix10_dB": -25.77990866268538,
+          "full_sum_mag": 0.0001154373562543608
+        },
+        {
+          "phase_deg": 315.0,
+          "converged": true,
+          "coh_full_dB": -25.8290669088507,
+          "coh_2term_dB": -25.830788839040903,
+          "mix10_dB": -29.951145989770403,
+          "full_sum_mag": 0.00011722941389842648
+        }
+      ],
+      "all_phases_converged": true,
+      "peak_dB": -22.709084675901575,
+      "peak_phase_deg": 135.0,
+      "trough_dB": -45.09491416466058,
+      "swing_dB": 22.385829488759004,
+      "abs_out_in_dB": -35.49928589329816,
+      "gamma_in_sq": 0.5941909513785019
+    },
+    {
+      "pump_dBm": 15.0,
+      "rows": [
+        {
+          "phase_deg": 0.0,
+          "converged": true,
+          "coh_full_dB": -39.000194707494764,
+          "coh_2term_dB": -38.9997680845284,
+          "mix10_dB": -37.79850652752203,
+          "full_sum_mag": 2.5732394669679174e-05
+        },
+        {
+          "phase_deg": 45.0,
+          "converged": true,
+          "coh_full_dB": -39.59683844375091,
+          "coh_2term_dB": -39.59504566034794,
+          "mix10_dB": -35.93405003692344,
+          "full_sum_mag": 2.4024149232815174e-05
+        },
+        {
+          "phase_deg": 90.0,
+          "converged": true,
+          "coh_full_dB": -43.15496066822164,
+          "coh_2term_dB": -43.15377551952329,
+          "mix10_dB": -38.18045503795064,
+          "full_sum_mag": 1.5949310234789904e-05
+        },
+        {
+          "phase_deg": 135.0,
+          "converged": true,
+          "coh_full_dB": -36.71197615781929,
+          "coh_2term_dB": -36.71109958861547,
+          "mix10_dB": -36.80526195226031,
+          "full_sum_mag": 3.348814806840944e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "converged": true,
+          "coh_full_dB": -34.79674409182031,
+          "coh_2term_dB": -34.79591359486876,
+          "mix10_dB": -36.35315529677498,
+          "full_sum_mag": 4.174963995677653e-05
+        },
+        {
+          "phase_deg": 225.0,
+          "converged": true,
+          "coh_full_dB": -35.531743794531046,
+          "coh_2term_dB": -35.53168494907578,
+          "mix10_dB": -38.460176535985205,
+          "full_sum_mag": 3.836213324026375e-05
+        },
+        {
+          "phase_deg": 270.0,
+          "converged": true,
+          "coh_full_dB": -33.86839071465281,
+          "coh_2term_dB": -33.869453268554714,
+          "mix10_dB": -36.09864314091514,
+          "full_sum_mag": 4.645905838114188e-05
+        },
+        {
+          "phase_deg": 315.0,
+          "converged": true,
+          "coh_full_dB": -35.0421500048313,
+          "coh_2term_dB": -35.04317137527173,
+          "mix10_dB": -37.23745754356774,
+          "full_sum_mag": 4.058657827602619e-05
+        }
+      ],
+      "all_phases_converged": true,
+      "peak_dB": -33.86839071465281,
+      "peak_phase_deg": 270.0,
+      "trough_dB": -43.15496066822164,
+      "swing_dB": 9.28656995356883,
+      "abs_out_in_dB": -46.65859193204939,
+      "gamma_in_sq": 0.5941909513785019
+    },
+    {
+      "pump_dBm": 12.0,
+      "rows": [
+        {
+          "phase_deg": 0.0,
+          "converged": true,
+          "coh_full_dB": -46.56774792538366,
+          "coh_2term_dB": -46.56447054649931,
+          "mix10_dB": -41.56778927952737,
+          "full_sum_mag": 1.0767194117832764e-05
+        },
+        {
+          "phase_deg": 45.0,
+          "converged": true,
+          "coh_full_dB": -48.564268318883244,
+          "coh_2term_dB": -48.563591643574846,
+          "mix10_dB": -41.433547139258366,
+          "full_sum_mag": 8.556113227569945e-06
+        },
+        {
+          "phase_deg": 90.0,
+          "converged": true,
+          "coh_full_dB": -43.13835141256774,
+          "coh_2term_dB": -43.137535253328956,
+          "mix10_dB": -41.802375458285105,
+          "full_sum_mag": 1.597983786316612e-05
+        },
+        {
+          "phase_deg": 135.0,
+          "converged": true,
+          "coh_full_dB": -39.23312320816978,
+          "coh_2term_dB": -39.23103092990032,
+          "mix10_dB": -41.41947565023066,
+          "full_sum_mag": 2.505150251726081e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "converged": true,
+          "coh_full_dB": -37.86438949446376,
+          "coh_2term_dB": -37.863062831241926,
+          "mix10_dB": -41.58858020992089,
+          "full_sum_mag": 2.932719078233096e-05
+        },
+        {
+          "phase_deg": 225.0,
+          "converged": true,
+          "coh_full_dB": -37.712848209208836,
+          "coh_2term_dB": -37.71362764091797,
+          "mix10_dB": -41.727752754036445,
+          "full_sum_mag": 2.984334700086902e-05
+        },
+        {
+          "phase_deg": 270.0,
+          "converged": true,
+          "coh_full_dB": -38.45056095243319,
+          "coh_2term_dB": -38.45294385536635,
+          "mix10_dB": -41.365109303283454,
+          "full_sum_mag": 2.741333614710033e-05
+        },
+        {
+          "phase_deg": 315.0,
+          "converged": true,
+          "coh_full_dB": -41.28382406839088,
+          "coh_2term_dB": -41.28514799052871,
+          "mix10_dB": -41.74281295943621,
+          "full_sum_mag": 1.97832999495157e-05
+        }
+      ],
+      "all_phases_converged": true,
+      "peak_dB": -37.712848209208836,
+      "peak_phase_deg": 225.0,
+      "trough_dB": -48.564268318883244,
+      "swing_dB": 10.851420109674407,
+      "abs_out_in_dB": -50.50304942660542,
+      "gamma_in_sq": 0.5941909513785019
+    },
+    {
+      "pump_dBm": 9.0,
+      "rows": [
+        {
+          "phase_deg": 0.0,
+          "converged": true,
+          "coh_full_dB": -52.131705893326696,
+          "coh_2term_dB": -52.129289222391975,
+          "mix10_dB": -43.44003816910944,
+          "full_sum_mag": 5.674200065900276e-06
+        },
+        {
+          "phase_deg": 45.0,
+          "converged": true,
+          "coh_full_dB": -46.77510527793225,
+          "coh_2term_dB": -46.77752913721776,
+          "mix10_dB": -43.476409030800966,
+          "full_sum_mag": 1.0513193920320417e-05
+        },
+        {
+          "phase_deg": 90.0,
+          "converged": true,
+          "coh_full_dB": -42.14357229351069,
+          "coh_2term_dB": -42.142249388757016,
+          "mix10_dB": -43.47537703626156,
+          "full_sum_mag": 1.7918899119030334e-05
+        },
+        {
+          "phase_deg": 135.0,
+          "converged": true,
+          "coh_full_dB": -39.90697630323936,
+          "coh_2term_dB": -39.90442067807207,
+          "mix10_dB": -43.44044507547199,
+          "full_sum_mag": 2.3181478095965294e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "converged": true,
+          "coh_full_dB": -39.21976263937288,
+          "coh_2term_dB": -39.218822902956205,
+          "mix10_dB": -43.49073175628307,
+          "full_sum_mag": 2.5090066197794925e-05
+        },
+        {
+          "phase_deg": 225.0,
+          "converged": true,
+          "coh_full_dB": -39.77413673926432,
+          "coh_2term_dB": -39.77650230835998,
+          "mix10_dB": -43.4543139771337,
+          "full_sum_mag": 2.3538734053750856e-05
+        },
+        {
+          "phase_deg": 270.0,
+          "converged": true,
+          "coh_full_dB": -41.81809239893366,
+          "coh_2term_dB": -41.82168825055612,
+          "mix10_dB": -43.45544546748782,
+          "full_sum_mag": 1.8603099939307584e-05
+        },
+        {
+          "phase_deg": 315.0,
+          "converged": true,
+          "coh_full_dB": -46.17456814057546,
+          "coh_2term_dB": -46.176122623706675,
+          "mix10_dB": -43.490400490895325,
+          "full_sum_mag": 1.1265786902569338e-05
+        }
+      ],
+      "all_phases_converged": true,
+      "peak_dB": -39.21976263937288,
+      "peak_phase_deg": 180.0,
+      "trough_dB": -52.131705893326696,
+      "swing_dB": 12.911943253953815,
+      "abs_out_in_dB": -52.009963856769474,
+      "gamma_in_sq": 0.5941909513785019
+    },
+    {
+      "pump_dBm": 6.0,
+      "rows": [
+        {
+          "phase_deg": 0.0,
+          "converged": true,
+          "coh_full_dB": -49.181658570468905,
+          "coh_2term_dB": -49.19827489760803,
+          "mix10_dB": -43.27200731386286,
+          "full_sum_mag": 7.969058420377464e-06
+        },
+        {
+          "phase_deg": 45.0,
+          "converged": true,
+          "coh_full_dB": -43.77503538035449,
+          "coh_2term_dB": -43.77401188010529,
+          "mix10_dB": -43.274586261412686,
+          "full_sum_mag": 1.4850400630847438e-05
+        },
+        {
+          "phase_deg": 90.0,
+          "converged": true,
+          "coh_full_dB": -40.74093139720196,
+          "coh_2term_dB": -40.73163202548183,
+          "mix10_dB": -43.272454016645,
+          "full_sum_mag": 2.1059272743307505e-05
+        },
+        {
+          "phase_deg": 135.0,
+          "converged": true,
+          "coh_full_dB": -39.41113155205848,
+          "coh_2term_dB": -39.40453934335797,
+          "mix10_dB": -43.27289390360947,
+          "full_sum_mag": 2.454332292193639e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "converged": true,
+          "coh_full_dB": -39.39539500265007,
+          "coh_2term_dB": -39.39752451467534,
+          "mix10_dB": -43.2743785654666,
+          "full_sum_mag": 2.4587829277924024e-05
+        },
+        {
+          "phase_deg": 225.0,
+          "converged": true,
+          "coh_full_dB": -40.69667384489627,
+          "coh_2term_dB": -40.70584397213529,
+          "mix10_dB": -43.27181196831106,
+          "full_sum_mag": 2.1166850717605092e-05
+        },
+        {
+          "phase_deg": 270.0,
+          "converged": true,
+          "coh_full_dB": -43.71306846560651,
+          "coh_2term_dB": -43.72100884693001,
+          "mix10_dB": -43.27394885843877,
+          "full_sum_mag": 1.495672524877122e-05
+        },
+        {
+          "phase_deg": 315.0,
+          "converged": true,
+          "coh_full_dB": -49.126184780516496,
+          "coh_2term_dB": -49.12686117171276,
+          "mix10_dB": -43.273482468090464,
+          "full_sum_mag": 8.020116928881585e-06
+        }
+      ],
+      "all_phases_converged": true,
+      "peak_dB": -39.39539500265007,
+      "peak_phase_deg": 180.0,
+      "trough_dB": -49.181658570468905,
+      "swing_dB": 9.786263567818835,
+      "abs_out_in_dB": -52.185596220046655,
+      "gamma_in_sq": 0.5941909513785019
+    },
+    {
+      "pump_dBm": 3.0,
+      "rows": [
+        {
+          "phase_deg": 0.0,
+          "converged": true,
+          "coh_full_dB": -25.511066482263516,
+          "coh_2term_dB": -25.491608147996125,
+          "mix10_dB": -28.85364319666866,
+          "full_sum_mag": 0.00012160085120827272
+        },
+        {
+          "phase_deg": 45.0,
+          "converged": true,
+          "coh_full_dB": -25.20009819220586,
+          "coh_2term_dB": -25.193786686880383,
+          "mix10_dB": -28.853722159122857,
+          "full_sum_mag": 0.00012603321924811893
+        },
+        {
+          "phase_deg": 90.0,
+          "converged": true,
+          "coh_full_dB": -26.126995927704083,
+          "coh_2term_dB": -26.142015258199514,
+          "mix10_dB": -28.853659927851236,
+          "full_sum_mag": 0.00011327658371473847
+        },
+        {
+          "phase_deg": 135.0,
+          "converged": true,
+          "coh_full_dB": -28.545306148217605,
+          "coh_2term_dB": -28.564692960118116,
+          "mix10_dB": -28.853656958023677,
+          "full_sum_mag": 8.574812487034608e-05
+        },
+        {
+          "phase_deg": 180.0,
+          "converged": true,
+          "coh_full_dB": -32.896535449790115,
+          "coh_2term_dB": -32.88287690950904,
+          "mix10_dB": -28.85372185393507,
+          "full_sum_mag": 5.195928505108112e-05
+        },
+        {
+          "phase_deg": 225.0,
+          "converged": true,
+          "coh_full_dB": -35.00276848502109,
+          "coh_2term_dB": -35.0247453881861,
+          "mix10_dB": -28.853633223194556,
+          "full_sum_mag": 4.0771014199382873e-05
+        },
+        {
+          "phase_deg": 270.0,
+          "converged": true,
+          "coh_full_dB": -30.392892241914797,
+          "coh_2term_dB": -30.42082677789539,
+          "mix10_dB": -28.853696103136347,
+          "full_sum_mag": 6.931788880072844e-05
+        },
+        {
+          "phase_deg": 315.0,
+          "converged": true,
+          "coh_full_dB": -27.11373198446154,
+          "coh_2term_dB": -27.106153118540448,
+          "mix10_dB": -28.853700301015092,
+          "full_sum_mag": 0.00010111214878742084
+        }
+      ],
+      "all_phases_converged": true,
+      "peak_dB": -25.20009819220586,
+      "peak_phase_deg": 45.0,
+      "trough_dB": -35.00276848502109,
+      "swing_dB": 9.802670292815233,
+      "abs_out_in_dB": -37.99029940960244,
+      "gamma_in_sq": 0.5941909513785019
+    },
+    {
+      "pump_dBm": 0.0,
+      "rows": [
+        {
+          "phase_deg": 0.0,
+          "converged": true,
+          "coh_full_dB": -16.38978412185047,
+          "coh_2term_dB": -16.376991048275755,
+          "mix10_dB": -15.949507073670171,
+          "full_sum_mag": 0.00034753674804357886
+        },
+        {
+          "phase_deg": 45.0,
+          "converged": true,
+          "coh_full_dB": -13.514138333328667,
+          "coh_2term_dB": -13.525685131686396,
+          "mix10_dB": -15.949505795371323,
+          "full_sum_mag": 0.0004839305310121768
+        },
+        {
+          "phase_deg": 90.0,
+          "converged": true,
+          "coh_full_dB": -12.260985734845063,
+          "coh_2term_dB": -12.280358152982123,
+          "mix10_dB": -15.949506052223244,
+          "full_sum_mag": 0.0005590371282907677
+        },
+        {
+          "phase_deg": 135.0,
+          "converged": true,
+          "coh_full_dB": -12.315139527762271,
+          "coh_2term_dB": -12.318715013894124,
+          "mix10_dB": -15.949506965389752,
+          "full_sum_mag": 0.0005555625501436005
+        },
+        {
+          "phase_deg": 180.0,
+          "converged": true,
+          "coh_full_dB": -13.67292728594169,
+          "coh_2term_dB": -13.650263375348608,
+          "mix10_dB": -15.949505416103838,
+          "full_sum_mag": 0.00047516404945727083
+        },
+        {
+          "phase_deg": 225.0,
+          "converged": true,
+          "coh_full_dB": -16.65231697595886,
+          "coh_2term_dB": -16.620477237650086,
+          "mix10_dB": -15.949506694565565,
+          "full_sum_mag": 0.00033718953726349774
+        },
+        {
+          "phase_deg": 270.0,
+          "converged": true,
+          "coh_full_dB": -21.51368479134581,
+          "coh_2term_dB": -21.5314546298722,
+          "mix10_dB": -15.949506436784404,
+          "full_sum_mag": 0.00019266627443569807
+        },
+        {
+          "phase_deg": 315.0,
+          "converged": true,
+          "coh_full_dB": -21.22515716768978,
+          "coh_2term_dB": -21.221401022486393,
+          "mix10_dB": -15.949505523123443,
+          "full_sum_mag": 0.000199173741057097
+        }
+      ],
+      "all_phases_converged": true,
+      "peak_dB": -12.260985734845063,
+      "peak_phase_deg": 90.0,
+      "trough_dB": -21.51368479134581,
+      "swing_dB": 9.252699056500747,
+      "abs_out_in_dB": -25.05118695224165,
+      "gamma_in_sq": 0.5941909513785019
+    },
+    {
+      "pump_dBm": -3.0,
+      "rows": [
+        {
+          "phase_deg": 0.0,
+          "converged": true,
+          "coh_full_dB": -6.948952574265396,
+          "coh_2term_dB": -6.961307484819605,
+          "mix10_dB": -5.224819129549719,
+          "full_sum_mag": 0.0010304865089840627
+        },
+        {
+          "phase_deg": 45.0,
+          "converged": true,
+          "coh_full_dB": -5.147852813110477,
+          "coh_2term_dB": -5.144417617767287,
+          "mix10_dB": -5.224819115726312,
+          "full_sum_mag": 0.0012679358998845122
+        },
+        {
+          "phase_deg": 90.0,
+          "converged": true,
+          "coh_full_dB": -3.7794793189806275,
+          "coh_2term_dB": -3.7798731385414097,
+          "mix10_dB": -5.224819121819493,
+          "full_sum_mag": 0.0014842804703156798
+        },
+        {
+          "phase_deg": 135.0,
+          "converged": true,
+          "coh_full_dB": -3.2426746176632273,
+          "coh_2term_dB": -3.2428888200251555,
+          "mix10_dB": -5.2248191304368685,
+          "full_sum_mag": 0.0015789057569430675
+        },
+        {
+          "phase_deg": 180.0,
+          "converged": true,
+          "coh_full_dB": -3.5851907609199687,
+          "coh_2term_dB": -3.5757652242837197,
+          "mix10_dB": -5.2248191091511025,
+          "full_sum_mag": 0.0015178554036649125
+        },
+        {
+          "phase_deg": 225.0,
+          "converged": true,
+          "coh_full_dB": -4.771847739062841,
+          "coh_2term_dB": -4.7575284680523575,
+          "mix10_dB": -5.224819135716688,
+          "full_sum_mag": 0.0013240291667178828
+        },
+        {
+          "phase_deg": 270.0,
+          "converged": true,
+          "coh_full_dB": -6.540181440895111,
+          "coh_2term_dB": -6.546958323361586,
+          "mix10_dB": -5.224819122019869,
+          "full_sum_mag": 0.001080142033999322
+        },
+        {
+          "phase_deg": 315.0,
+          "converged": true,
+          "coh_full_dB": -7.755483588491384,
+          "coh_2term_dB": -7.789936760482598,
+          "mix10_dB": -5.224819111708976,
+          "full_sum_mag": 0.0009391084746607207
+        }
+      ],
+      "all_phases_converged": true,
+      "peak_dB": -3.2426746176632273,
+      "peak_phase_deg": 135.0,
+      "trough_dB": -7.755483588491384,
+      "swing_dB": 4.512808970828157,
+      "abs_out_in_dB": -16.03287583505981,
+      "gamma_in_sq": 0.5941909513785019
+    },
+    {
+      "pump_dBm": -6.0,
+      "rows": [
+        {
+          "phase_deg": 0.0,
+          "converged": true,
+          "coh_full_dB": 0.06552592574767149,
+          "coh_2term_dB": 0.05010912848292071,
+          "mix10_dB": -0.37033624045305963,
+          "full_sum_mag": 0.002310820626482458
+        },
+        {
+          "phase_deg": 45.0,
+          "converged": true,
+          "coh_full_dB": 0.0566454741493494,
+          "coh_2term_dB": 0.053437900783659086,
+          "mix10_dB": -0.3703362431894065,
+          "full_sum_mag": 0.00230845925133782
+        },
+        {
+          "phase_deg": 90.0,
+          "converged": true,
+          "coh_full_dB": -0.18467622143978787,
+          "coh_2term_dB": -0.17922041680988207,
+          "mix10_dB": -0.3703362442878161,
+          "full_sum_mag": 0.0022452056583684072
+        },
+        {
+          "phase_deg": 135.0,
+          "converged": true,
+          "coh_full_dB": -0.5425012042764923,
+          "coh_2term_dB": -0.534908192257429,
+          "mix10_dB": -0.37033624454184044,
+          "full_sum_mag": 0.002154591186072109
+        },
+        {
+          "phase_deg": 180.0,
+          "converged": true,
+          "coh_full_dB": -0.8201847517416638,
+          "coh_2term_dB": -0.8081140357963572,
+          "mix10_dB": -0.37033624382167596,
+          "full_sum_mag": 0.00208679939212838
+        },
+        {
+          "phase_deg": 225.0,
+          "converged": true,
+          "coh_full_dB": -0.8259229340555567,
+          "coh_2term_dB": -0.8121735654446122,
+          "mix10_dB": -0.3703362417685621,
+          "full_sum_mag": 0.002085421239586416
+        },
+        {
+          "phase_deg": 270.0,
+          "converged": true,
+          "coh_full_dB": -0.5444977880842629,
+          "coh_2term_dB": -0.5441166793316328,
+          "mix10_dB": -0.3703362416751232,
+          "full_sum_mag": 0.002154095977443862
+        },
+        {
+          "phase_deg": 315.0,
+          "converged": true,
+          "coh_full_dB": -0.1721812073838949,
+          "coh_2term_dB": -0.18770407821997123,
+          "mix10_dB": -0.37033624082781663,
+          "full_sum_mag": 0.002248437804463232
+        }
+      ],
+      "all_phases_converged": true,
+      "peak_dB": 0.06552592574767149,
+      "peak_phase_deg": 0.0,
+      "trough_dB": -0.8259229340555567,
+      "swing_dB": 0.8914488598032282,
+      "abs_out_in_dB": -12.724675291648913,
+      "gamma_in_sq": 0.5941909513785019
+    }
+  ],
+  "operating_pump_dBm": 21.0,
+  "realized": {
+    "operating_pump_dBm": 21.0,
+    "boost_peak_dB": 14.267104280864265,
+    "boost_peak_phase_deg": 0.0,
+    "boost_trough_dB": 11.118341767817663,
+    "boost_swing_dB": 3.148762513046602,
+    "abs_out_in_dB": 1.4769030634676805,
+    "gamma_in_sq": 0.5941909513785019,
+    "phase_sensitive": false,
+    "note": "ADS HB realized record (idealized proxy varactor; not a real-world device gain)"
+  },
+  "best_abs": {
+    "pump_dBm": 21.0,
+    "abs_out_in_dB": 1.4769030634676805,
+    "boost_peak_dB": 14.267104280864265,
+    "boost_peak_phase_deg": 0.0
+  },
+  "stability": {
+    "bounded_lobe": true,
+    "peak_dB": 14.267104280864265,
+    "trough_dB": 11.118341767817663,
+    "swing_dB": 3.148762513046602,
+    "phase_sensitive": false,
+    "nonconvergence_onset_dBm": null,
+    "stability_margin_dB": null,
+    "inflated_ratio_artifact": false,
+    "verdict": "STABLE: bounded phase-insensitive gain"
+  },
+  "parity": {
+    "flat_run": "completed",
+    "hier_run": "completed",
+    "Vout_signal_flat": "6.329389e-03",
+    "Vout_signal_hier": "6.329511e-03",
+    "max_abs_dV": 2.127217133444082e-06,
+    "bit_identical": false,
+    "verdict": "DIFFER"
+  }
+}

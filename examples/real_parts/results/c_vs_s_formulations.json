@@ -1,0 +1,230 @@
+{
+  "headline": "C-linear vs S-linear (elastance) vs reciprocal modulated-element formulations: gain vs depth (SM Fig S1)",
+  "provenance": {
+    "public_path": "level10_realistic_param_gain(spec, RealisticVaractor.ideal(0.3e-12), m_branch_pump=m [capacitance/reciprocal] | m_s_branch=m [elastance], modulation_formulation=...)",
+    "formulations": {
+      "capacitance": "Q=C(t)v, C(t)=C0(1+m cos); the historical default (byte-identical).",
+      "elastance": "S(t)Q=v, S(t)=S0(1+m_s cos), S0=1/C0, R=L=0 in the element; package/stub shared.",
+      "reciprocal": "exact S(t)=1/C(t) of the SAME C-device -- a solver identity, finite-truncation-bounded (machine precision to m~0.1 at N=6; <=1e-9 all depths at N=10)."
+    },
+    "first_order_agreement_note": "C and S agree to FIRST order in m; the residual is O(m^2) (m=0.01 -> ~7e-5 dB) and grows to a several-dB divergence at m=0.5.",
+    "runner": "c_vs_s_artifact.py, a one-off generator not included in the repository (additive)"
+  },
+  "fig_s1": {
+    "device": "k0p4 ideal-C canonical (RealisticVaractor.ideal 0.3pF; unity package divider), 15 cells, f_s=3.1 GHz, f_m=6.2 GHz, truncation_N=6 (reciprocal residual also at N=10)",
+    "metric": "coherent_peak_dB (phase-peaked degenerate PSA)",
+    "rows": [
+      {
+        "m": 0.01,
+        "capacitance_dB": 0.0454450423681477,
+        "elastance_dB": 0.04551414344040158,
+        "reciprocal_dB_N6": 0.04544504236815346,
+        "reciprocal_dB_N10": 0.04544504236815346,
+        "c_minus_s_dB": -6.91010722538854e-05,
+        "reciprocal_residual_N6": 5.7592819402429996e-15,
+        "reciprocal_residual_N10": 5.7592819402429996e-15
+      },
+      {
+        "m": 0.03,
+        "capacitance_dB": 0.1450257951471019,
+        "elastance_dB": 0.14587381776388064,
+        "reciprocal_dB_N6": 0.1450257951471057,
+        "reciprocal_dB_N10": 0.1450257951471076,
+        "c_minus_s_dB": -0.000848022616778743,
+        "reciprocal_residual_N6": 3.802513859341161e-15,
+        "reciprocal_residual_N10": 5.689893001203927e-15
+      },
+      {
+        "m": 0.06,
+        "capacitance_dB": 0.3164515224694835,
+        "elastance_dB": 0.32134538004384905,
+        "reciprocal_dB_N6": 0.3164515224694891,
+        "reciprocal_dB_N10": 0.3164515224694872,
+        "c_minus_s_dB": -0.004893857574365557,
+        "reciprocal_residual_N6": 5.6066262743570405e-15,
+        "reciprocal_residual_N10": 1.1157741397482823e-14
+      },
+      {
+        "m": 0.1,
+        "capacitance_dB": 0.5872712862122126,
+        "elastance_dB": 0.6072788572677086,
+        "reciprocal_dB_N6": 0.5872712862122162,
+        "reciprocal_dB_N10": 0.5872712862123515,
+        "c_minus_s_dB": -0.020007571055496,
+        "reciprocal_residual_N6": 3.6637359812630166e-15,
+        "reciprocal_residual_N10": 2.1815882433884326e-13
+      },
+      {
+        "m": 0.15,
+        "capacitance_dB": 0.9965859767958534,
+        "elastance_dB": 1.0633486254314628,
+        "reciprocal_dB_N6": 0.9965859767958517,
+        "reciprocal_dB_N10": 0.9965859767959566,
+        "c_minus_s_dB": -0.06676264863560943,
+        "reciprocal_residual_N6": 1.6653345369377348e-15,
+        "reciprocal_residual_N10": 3.7969627442180354e-14
+      },
+      {
+        "m": 0.2,
+        "capacitance_dB": 1.4893554160214884,
+        "elastance_dB": 1.6560689125217312,
+        "reciprocal_dB_N6": 1.4893554160209441,
+        "reciprocal_dB_N10": 1.489355416020863,
+        "c_minus_s_dB": -0.1667134965002428,
+        "reciprocal_residual_N6": 5.442313266712517e-13,
+        "reciprocal_residual_N10": 1.219024881038422e-13
+      },
+      {
+        "m": 0.3,
+        "capacitance_dB": 2.754451748591615,
+        "elastance_dB": 3.443016210943256,
+        "reciprocal_dB_N6": 2.7544517484585285,
+        "reciprocal_dB_N10": 2.7544517484743998,
+        "c_minus_s_dB": -0.6885644623516409,
+        "reciprocal_residual_N6": 1.3308643076470617e-10,
+        "reciprocal_residual_N10": 2.5757174171303632e-14
+      },
+      {
+        "m": 0.4,
+        "capacitance_dB": 4.468830429789231,
+        "elastance_dB": 6.7180844667108675,
+        "reciprocal_dB_N6": 4.468830422146104,
+        "reciprocal_dB_N10": 4.468830423127042,
+        "c_minus_s_dB": -2.249254036921636,
+        "reciprocal_residual_N6": 7.643127020173779e-09,
+        "reciprocal_residual_N10": 1.297797425081626e-10
+      },
+      {
+        "m": 0.5,
+        "capacitance_dB": 6.796555091969251,
+        "elastance_dB": 14.577818800239095,
+        "reciprocal_dB_N6": 6.796554883587088,
+        "reciprocal_dB_N10": 6.7965549134140355,
+        "c_minus_s_dB": -7.781263708269845,
+        "reciprocal_residual_N6": 2.0838216219232208e-07,
+        "reciprocal_residual_N10": 7.632161569404161e-10
+      },
+      {
+        "m": 0.7,
+        "capacitance_dB": 15.382329416843511,
+        "elastance_dB": 13.098037537962357,
+        "reciprocal_dB_N6": 15.382277215101778,
+        "reciprocal_dB_N10": 15.382394880299493,
+        "c_minus_s_dB": 2.284291878881154,
+        "reciprocal_residual_N6": 5.2201741732815776e-05,
+        "reciprocal_residual_N10": 0.00015435775604544233
+      }
+    ]
+  },
+  "sm_s7_context": {
+    "device": "SMV1245 (with package) + R6/R9 ADS-tabulated corrected stub, f_s=3.1 GHz, N=6",
+    "stub_table": "stub_sp80\\stub.ckt.ds",
+    "caveat": "element_referenced rows drive the elastance element at m_s = m_C (the branch-TOP depth), NOT comparable to the C-path which applies the package divider; matched_junction rows drive it at m_s = depth_eff(m_C), the JUNCTION depth the C-path realizes -- the apples-to-apples C-vs-S comparison at equal junction depth.",
+    "element_referenced_rows": [
+      {
+        "m_C": 0.01,
+        "capacitance_dB": 0.007858486726210161,
+        "m_s": 0.01,
+        "elastance_dB": 0.054051024645553135,
+        "c_minus_s_dB": -0.046192537919342976,
+        "element_referenced": true
+      },
+      {
+        "m_C": 0.03,
+        "capacitance_dB": 0.023529271683042176,
+        "m_s": 0.03,
+        "elastance_dB": 0.16302335880945446,
+        "c_minus_s_dB": -0.1394940871264123,
+        "element_referenced": true
+      },
+      {
+        "m_C": 0.1,
+        "capacitance_dB": 0.07790266487239353,
+        "m_s": 0.1,
+        "elastance_dB": 0.5540922232633012,
+        "c_minus_s_dB": -0.4761895583909077,
+        "element_referenced": true
+      },
+      {
+        "m_C": 0.2,
+        "capacitance_dB": 0.154351951041749,
+        "m_s": 0.2,
+        "elastance_dB": 1.1417123275891612,
+        "c_minus_s_dB": -0.9873603765474122,
+        "element_referenced": true
+      },
+      {
+        "m_C": 0.3,
+        "capacitance_dB": 0.22944300717271,
+        "m_s": 0.3,
+        "elastance_dB": 1.7686411447690307,
+        "c_minus_s_dB": -1.5391981375963206,
+        "element_referenced": true
+      },
+      {
+        "m_C": 0.5,
+        "capacitance_dB": 0.3759076203294336,
+        "m_s": 0.5,
+        "elastance_dB": 3.1679542649208132,
+        "c_minus_s_dB": -2.7920466445913794,
+        "element_referenced": true
+      }
+    ],
+    "matched_junction_rows": [
+      {
+        "m_C": 0.01,
+        "depth_eff": 0.001459186564873633,
+        "capacitance_dB": 0.007858486726210161,
+        "m_s": 0.001459186564873633,
+        "elastance_dB": 0.007869266019355049,
+        "c_minus_s_dB": -1.0779293144887528e-05,
+        "matched_junction_depth": true
+      },
+      {
+        "m_C": 0.03,
+        "depth_eff": 0.00437759645338225,
+        "capacitance_dB": 0.023529271683042176,
+        "m_s": 0.00437759645338225,
+        "elastance_dB": 0.023626171734462215,
+        "c_minus_s_dB": -9.690005142003882e-05,
+        "matched_junction_depth": true
+      },
+      {
+        "m_C": 0.1,
+        "depth_eff": 0.014593382077104356,
+        "capacitance_dB": 0.07790266487239353,
+        "m_s": 0.014593382077104356,
+        "elastance_dB": 0.07897511044585637,
+        "c_minus_s_dB": -0.001072445573462838,
+        "matched_junction_depth": true
+      },
+      {
+        "m_C": 0.2,
+        "depth_eff": 0.02919595806942318,
+        "capacitance_dB": 0.154351951041749,
+        "m_s": 0.02919595806942318,
+        "elastance_dB": 0.15861968535365148,
+        "c_minus_s_dB": -0.004267734311902471,
+        "matched_junction_depth": true
+      },
+      {
+        "m_C": 0.3,
+        "depth_eff": 0.04381693913656563,
+        "capacitance_dB": 0.22944300717271,
+        "m_s": 0.04381693913656563,
+        "elastance_dB": 0.23900117282702155,
+        "c_minus_s_dB": -0.009558165654311557,
+        "matched_junction_depth": true
+      },
+      {
+        "m_C": 0.5,
+        "depth_eff": 0.07315115082209976,
+        "capacitance_dB": 0.3759076203294336,
+        "m_s": 0.07315115082209976,
+        "elastance_dB": 0.40225574967445643,
+        "c_minus_s_dB": -0.02634812934502284,
+        "matched_junction_depth": true
+      }
+    ]
+  }
+}

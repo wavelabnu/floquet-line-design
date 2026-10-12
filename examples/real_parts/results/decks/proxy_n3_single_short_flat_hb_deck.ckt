@@ -1,0 +1,233 @@
+; tvtl_ads_builder_v2 flat hpeesofsim HB deck
+; label = optimized_sp_n3_single_short_n15
+; ground_nodes = n_c1_g, n_c2_g, n_c3_g, n_c4_g, n_c5_g, n_c6_g, n_c7_g, n_c8_g, n_c9_g, n_c10_g, n_c11_g, n_c12_g, n_c13_g, n_c14_g, n_c15_g (emitted as 0)
+
+; --- substrate ---
+model msub1 MSUB H=1.54 mm Er=3.38 Mur=1 Cond=58000000 T=0.0175 mm TanD=0.0027 Rough=0 mm
+
+; --- elements ---
+MLIN:MATCH_IN_SERIES n_input n_mi_feed Subst="msub1" W=3.51457531863 mm L=5.94628000953 mm
+MLIN:MATCH_IN_STUB n_input n_IN_stub_end Subst="msub1" W=3.51457531863 mm L=13.3041318139 mm
+Short:IPR_IN n_mi_feed n_pin Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C1 n_pin n_c1_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C1 n_c1_l n_c1_r n_c1_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C1 n_c1_r n_c1_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C1 n_c1_b n_c1_lp L=0.3 nH
+R:RPKG_C1 n_c1_lp n_c1_rp R=0.5 Ohm
+SDD:VARACTOR_C1 n_c1_rp n_c1_v n_c1_ret n_c1_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C1 n_c1_v n_c1_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C1_0 n_c1_s0 n_c1_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C1_1 n_c1_s1 n_c1_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C1_2 n_c1_s2 n_c1_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C1 n_c1_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C1C2 n_c1_out n_pc1c2 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C2 n_pc1c2 n_c2_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C2 n_c2_l n_c2_r n_c2_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C2 n_c2_r n_c2_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C2 n_c2_b n_c2_lp L=0.3 nH
+R:RPKG_C2 n_c2_lp n_c2_rp R=0.5 Ohm
+SDD:VARACTOR_C2 n_c2_rp n_c2_v n_c2_ret n_c2_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C2 n_c2_v n_c2_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C2_0 n_c2_s0 n_c2_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C2_1 n_c2_s1 n_c2_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C2_2 n_c2_s2 n_c2_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C2 n_c2_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C2C3 n_c2_out n_pc2c3 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C3 n_pc2c3 n_c3_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C3 n_c3_l n_c3_r n_c3_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C3 n_c3_r n_c3_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C3 n_c3_b n_c3_lp L=0.3 nH
+R:RPKG_C3 n_c3_lp n_c3_rp R=0.5 Ohm
+SDD:VARACTOR_C3 n_c3_rp n_c3_v n_c3_ret n_c3_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C3 n_c3_v n_c3_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C3_0 n_c3_s0 n_c3_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C3_1 n_c3_s1 n_c3_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C3_2 n_c3_s2 n_c3_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C3 n_c3_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C3C4 n_c3_out n_pc3c4 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C4 n_pc3c4 n_c4_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C4 n_c4_l n_c4_r n_c4_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C4 n_c4_r n_c4_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C4 n_c4_b n_c4_lp L=0.3 nH
+R:RPKG_C4 n_c4_lp n_c4_rp R=0.5 Ohm
+SDD:VARACTOR_C4 n_c4_rp n_c4_v n_c4_ret n_c4_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C4 n_c4_v n_c4_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C4_0 n_c4_s0 n_c4_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C4_1 n_c4_s1 n_c4_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C4_2 n_c4_s2 n_c4_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C4 n_c4_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C4C5 n_c4_out n_pc4c5 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C5 n_pc4c5 n_c5_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C5 n_c5_l n_c5_r n_c5_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C5 n_c5_r n_c5_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C5 n_c5_b n_c5_lp L=0.3 nH
+R:RPKG_C5 n_c5_lp n_c5_rp R=0.5 Ohm
+SDD:VARACTOR_C5 n_c5_rp n_c5_v n_c5_ret n_c5_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C5 n_c5_v n_c5_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C5_0 n_c5_s0 n_c5_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C5_1 n_c5_s1 n_c5_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C5_2 n_c5_s2 n_c5_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C5 n_c5_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C5C6 n_c5_out n_pc5c6 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C6 n_pc5c6 n_c6_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C6 n_c6_l n_c6_r n_c6_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C6 n_c6_r n_c6_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C6 n_c6_b n_c6_lp L=0.3 nH
+R:RPKG_C6 n_c6_lp n_c6_rp R=0.5 Ohm
+SDD:VARACTOR_C6 n_c6_rp n_c6_v n_c6_ret n_c6_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C6 n_c6_v n_c6_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C6_0 n_c6_s0 n_c6_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C6_1 n_c6_s1 n_c6_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C6_2 n_c6_s2 n_c6_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C6 n_c6_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C6C7 n_c6_out n_pc6c7 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C7 n_pc6c7 n_c7_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C7 n_c7_l n_c7_r n_c7_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C7 n_c7_r n_c7_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C7 n_c7_b n_c7_lp L=0.3 nH
+R:RPKG_C7 n_c7_lp n_c7_rp R=0.5 Ohm
+SDD:VARACTOR_C7 n_c7_rp n_c7_v n_c7_ret n_c7_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C7 n_c7_v n_c7_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C7_0 n_c7_s0 n_c7_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C7_1 n_c7_s1 n_c7_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C7_2 n_c7_s2 n_c7_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C7 n_c7_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C7C8 n_c7_out n_pc7c8 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C8 n_pc7c8 n_c8_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C8 n_c8_l n_c8_r n_c8_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C8 n_c8_r n_c8_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C8 n_c8_b n_c8_lp L=0.3 nH
+R:RPKG_C8 n_c8_lp n_c8_rp R=0.5 Ohm
+SDD:VARACTOR_C8 n_c8_rp n_c8_v n_c8_ret n_c8_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C8 n_c8_v n_c8_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C8_0 n_c8_s0 n_c8_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C8_1 n_c8_s1 n_c8_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C8_2 n_c8_s2 n_c8_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C8 n_c8_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C8C9 n_c8_out n_pc8c9 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C9 n_pc8c9 n_c9_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C9 n_c9_l n_c9_r n_c9_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C9 n_c9_r n_c9_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C9 n_c9_b n_c9_lp L=0.3 nH
+R:RPKG_C9 n_c9_lp n_c9_rp R=0.5 Ohm
+SDD:VARACTOR_C9 n_c9_rp n_c9_v n_c9_ret n_c9_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C9 n_c9_v n_c9_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C9_0 n_c9_s0 n_c9_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C9_1 n_c9_s1 n_c9_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C9_2 n_c9_s2 n_c9_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C9 n_c9_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C9C10 n_c9_out n_pc9c10 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C10 n_pc9c10 n_c10_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C10 n_c10_l n_c10_r n_c10_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C10 n_c10_r n_c10_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C10 n_c10_b n_c10_lp L=0.3 nH
+R:RPKG_C10 n_c10_lp n_c10_rp R=0.5 Ohm
+SDD:VARACTOR_C10 n_c10_rp n_c10_v n_c10_ret n_c10_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C10 n_c10_v n_c10_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C10_0 n_c10_s0 n_c10_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C10_1 n_c10_s1 n_c10_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C10_2 n_c10_s2 n_c10_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C10 n_c10_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C10C11 n_c10_out n_pc10c11 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C11 n_pc10c11 n_c11_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C11 n_c11_l n_c11_r n_c11_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C11 n_c11_r n_c11_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C11 n_c11_b n_c11_lp L=0.3 nH
+R:RPKG_C11 n_c11_lp n_c11_rp R=0.5 Ohm
+SDD:VARACTOR_C11 n_c11_rp n_c11_v n_c11_ret n_c11_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C11 n_c11_v n_c11_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C11_0 n_c11_s0 n_c11_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C11_1 n_c11_s1 n_c11_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C11_2 n_c11_s2 n_c11_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C11 n_c11_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C11C12 n_c11_out n_pc11c12 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C12 n_pc11c12 n_c12_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C12 n_c12_l n_c12_r n_c12_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C12 n_c12_r n_c12_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C12 n_c12_b n_c12_lp L=0.3 nH
+R:RPKG_C12 n_c12_lp n_c12_rp R=0.5 Ohm
+SDD:VARACTOR_C12 n_c12_rp n_c12_v n_c12_ret n_c12_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C12 n_c12_v n_c12_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C12_0 n_c12_s0 n_c12_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C12_1 n_c12_s1 n_c12_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C12_2 n_c12_s2 n_c12_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C12 n_c12_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C12C13 n_c12_out n_pc12c13 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C13 n_pc12c13 n_c13_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C13 n_c13_l n_c13_r n_c13_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C13 n_c13_r n_c13_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C13 n_c13_b n_c13_lp L=0.3 nH
+R:RPKG_C13 n_c13_lp n_c13_rp R=0.5 Ohm
+SDD:VARACTOR_C13 n_c13_rp n_c13_v n_c13_ret n_c13_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C13 n_c13_v n_c13_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C13_0 n_c13_s0 n_c13_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C13_1 n_c13_s1 n_c13_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C13_2 n_c13_s2 n_c13_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C13 n_c13_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C13C14 n_c13_out n_pc13c14 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C14 n_pc13c14 n_c14_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C14 n_c14_l n_c14_r n_c14_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C14 n_c14_r n_c14_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C14 n_c14_b n_c14_lp L=0.3 nH
+R:RPKG_C14 n_c14_lp n_c14_rp R=0.5 Ohm
+SDD:VARACTOR_C14 n_c14_rp n_c14_v n_c14_ret n_c14_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C14 n_c14_v n_c14_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C14_0 n_c14_s0 n_c14_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C14_1 n_c14_s1 n_c14_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C14_2 n_c14_s2 n_c14_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C14 n_c14_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_C14C15 n_c14_out n_pc14c15 Mode=0 SaveCurrent=yes
+MLIN:LINE_LEFT_C15 n_pc14c15 n_c15_l Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+MTEE_ADS:TEE_C15 n_c15_l n_c15_r n_c15_b Subst="msub1" W1=2.49359086172 mm W2=2.49359086172 mm W3=1.93 mm
+MLIN:LINE_RIGHT_C15 n_c15_r n_c15_out Subst="msub1" W=2.49359086172 mm L=4.73525 mm
+L:LPKG_C15 n_c15_b n_c15_lp L=0.3 nH
+R:RPKG_C15 n_c15_lp n_c15_rp R=0.5 Ohm
+SDD:VARACTOR_C15 n_c15_rp n_c15_v n_c15_ret n_c15_ret I[1,1]=(3e-13)*_v1+(-7.285714285714285e-14)*_v1**2+(1.873469387755102e-14)*_v1**3+(-4.95131195335277e-15)*_v1**4+(1.329780924614744e-15)*_v1**5+(-3.609405366811448e-16)*_v1**6 I[2,1]=(-3e-13)*_v1+(7.285714285714285e-14)*_v1**2+(-1.873469387755102e-14)*_v1**3+(4.95131195335277e-15)*_v1**4+(-1.329780924614744e-15)*_v1**5+(3.609405366811448e-16)*_v1**6
+Short:IPR_VAR_C15 n_c15_v n_c15_s0 Mode=0 SaveCurrent=yes
+MLIN:STUB_C15_0 n_c15_s0 n_c15_s1 Subst="msub1" W=0.674293177035 mm L=9.67519941847 mm
+MLIN:STUB_C15_1 n_c15_s1 n_c15_s2 Subst="msub1" W=3.45011445091 mm L=3.68651783935 mm
+MLIN:STUB_C15_2 n_c15_s2 n_c15_via_top Subst="msub1" W=3.61380774859 mm L=7.53454384234 mm
+VIAGND:VIAGND_C15 n_c15_via_top Subst="msub1" D=1.6 mm W=3.61380774859 mm T=0.0175 mm Rho=0.706613906162
+Short:IPR_OUT n_c15_out n_mo_casc Mode=0 SaveCurrent=yes
+MLIN:MATCH_OUT_SERIES n_output n_mo_casc Subst="msub1" W=3.51457531863 mm L=5.9828321441 mm
+MLIN:MATCH_OUT_STUB n_output n_OUT_stub_end Subst="msub1" W=3.51457531863 mm L=13.3017712527 mm
+Port:P_OUT n_output 0 Num=3 Z=50 Ohm Noise=no
+; NAME annotation: NAME_00_n_input -> n_input
+; NAME annotation: NAME_01_n_c1_b -> n_c1_b
+; NAME annotation: NAME_02_n_c1_v -> n_c1_v
+; NAME annotation: NAME_03_n_c2_b -> n_c2_b
+; NAME annotation: NAME_04_n_c2_v -> n_c2_v
+; NAME annotation: NAME_05_n_c3_b -> n_c3_b
+; NAME annotation: NAME_06_n_c3_v -> n_c3_v
+; NAME annotation: NAME_07_n_c4_b -> n_c4_b
+; NAME annotation: NAME_08_n_c4_v -> n_c4_v
+; NAME annotation: NAME_09_n_c5_b -> n_c5_b
+; NAME annotation: NAME_10_n_c5_v -> n_c5_v
+; NAME annotation: NAME_11_n_c6_b -> n_c6_b
+; NAME annotation: NAME_12_n_c6_v -> n_c6_v
+; NAME annotation: NAME_13_n_c7_b -> n_c7_b
+; NAME annotation: NAME_14_n_c7_v -> n_c7_v
+; NAME annotation: NAME_15_n_c8_b -> n_c8_b
+; NAME annotation: NAME_16_n_c8_v -> n_c8_v
+; NAME annotation: NAME_17_n_c9_b -> n_c9_b
+; NAME annotation: NAME_18_n_c9_v -> n_c9_v
+; NAME annotation: NAME_19_n_c10_b -> n_c10_b
+; NAME annotation: NAME_20_n_c10_v -> n_c10_v
+; NAME annotation: NAME_21_n_c11_b -> n_c11_b
+; NAME annotation: NAME_22_n_c11_v -> n_c11_v
+; NAME annotation: NAME_23_n_c12_b -> n_c12_b
+; NAME annotation: NAME_24_n_c12_v -> n_c12_v
+; NAME annotation: NAME_25_n_c13_b -> n_c13_b
+; NAME annotation: NAME_26_n_c13_v -> n_c13_v
+; NAME annotation: NAME_27_n_c14_b -> n_c14_b
+; NAME annotation: NAME_28_n_c14_v -> n_c14_v
+; NAME annotation: NAME_29_n_c15_b -> n_c15_b
+; NAME annotation: NAME_30_n_c15_v -> n_c15_v
+; NAME annotation: NAME_31_n_output -> n_output
+
+; --- HB sources (built-in Port) ---
+Port:SIGNAL_SRC n_input 0 Num=1 Z=50 Ohm P[1]=polar(dbmtow(-30),0) Freq[1]=2 GHz Noise=no
+Port:PUMP_SRC n_input 0 Num=2 Z=50 Ohm P[1]=polar(dbmtow(15),0) Freq[1]=4 GHz Noise=no
+
+; --- analysis ---
+HB:HB1 Freq[1]=2 GHz Freq[2]=4 GHz Order[1]=5 Order[2]=5 MaxOrder=6 StatusLevel=2

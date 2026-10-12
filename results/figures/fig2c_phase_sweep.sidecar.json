@@ -1,0 +1,69 @@
+{
+  "panel": "fig2c_phase_sweep",
+  "generated_by": "examples/figures/fig2c_phase_sweep.py",
+  "command": "python examples/figures/fig2c_phase_sweep.py",
+  "palette_pinned": true,
+  "palette": {
+    "primary": "#1f77b4",
+    "accent": "#d62728",
+    "grey": "#7f7f7f",
+    "grey_dark": "#555555",
+    "reference": "#9e9e9e"
+  },
+  "style": {
+    "width_mm": 89.0,
+    "label_pt": 7.0,
+    "tick_pt": 6.0,
+    "data_lw_pt": 1.0,
+    "axis_lw_pt": 0.6,
+    "titles": "off",
+    "grid": "off"
+  },
+  "sources": [
+    {
+      "path": "examples/real_parts/results/headline_mavr.json",
+      "git_short_hash": "90e8805"
+    }
+  ],
+  "key_values": {
+    "y_label": "boost over passive pump-off (dB)",
+    "x_label": "pump phase (deg)",
+    "peak_from_data": {
+      "phase_deg": 210.0,
+      "boost_dB": 18.964776785110157
+    },
+    "trough_from_data": {
+      "phase_deg": 30.0,
+      "boost_dB": -9.4402739067521
+    },
+    "passive_S21_dB_derived": -4.614122443316526,
+    "replay_guard_max_dev_dB": 3.552713678800501e-15,
+    "replay_guard_threshold_dB": 1e-12,
+    "n_phase_points": 24
+  },
+  "caption_material": {
+    "candidate_id": "ABSENT (no candidate/candidate_id/id field in the record)",
+    "headline": "PSA gain-vs-pump-phase lobe (degenerate full-family out/in)",
+    "definition": "G_mod_in_dB = 10*log10(0.5|Sum V_(m+2n=1)|^2/50 / P_avs)",
+    "f_signal_GHz": 3.0,
+    "f_pump_GHz": 6.0,
+    "pump_power_dBm": 29.0,
+    "signal_power_dBm": -30.0,
+    "P_avs_W": 1e-06,
+    "passive_pumpoff_Vout_V": 0.005878870286072315,
+    "passive_S21_dB_derived": -4.614122443316526,
+    "phase_grid_deg": {
+      "start": 0.0,
+      "stop": 345.0,
+      "step": 15.0,
+      "n": 24
+    },
+    "varactor_part": "ABSENT (no varactor part field in the record)",
+    "varactor_bias": "ABSENT (no bias field in the record)",
+    "reference_level": {
+      "note": "no field literally named 'reference_level'; the recorded reference quantity is 'certified_reference_dB' (recorded for completeness, NOT annotated on the panel)",
+      "certified_reference_dB": 14.14
+    },
+    "design_reference": "MAVR-000350, 12 V bias, 24 cells, n4_single_combined (COMBINED MLEF||VIAGND trap) -- examples/real_parts/real_part_designs.py:206-230"
+  }
+}

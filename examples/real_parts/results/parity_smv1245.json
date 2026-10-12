@@ -1,0 +1,42 @@
+{
+  "cell": "smv1245",
+  "headline": "Fabricated SMV1245 board -- OPEN/MLEF 3-section stub with two mid-stub VIAGND, 15 cells, 0 V, 3.1 GHz",
+  "f_s_GHz": 3.1,
+  "f_pump_GHz": 6.2,
+  "emit_status": "ok",
+  "n_cells": 15,
+  "element_counts_flat": {
+    "MSUB": 1,
+    "I_PROBE": 31,
+    "MLIN": 75,
+    "MTEE": 15,
+    "L": 15,
+    "R": 15,
+    "SDD2P": 15,
+    "PORT": 1,
+    "VIAGND": 30
+  },
+  "element_counts_hier": {
+    "MSUB": 1,
+    "I_PROBE": 31,
+    "PORT": 1,
+    "MLIN": 75,
+    "MTEE": 15,
+    "L": 15,
+    "R": 15,
+    "SDD2P": 15,
+    "VIAGND": 30
+  },
+  "element_counts_match": true,
+  "flat_run": "completed",
+  "hier_run": "completed",
+  "n_mix_common": 41,
+  "Vout_signal_flat": "1.503640e-02",
+  "Vout_signal_hier": "1.503640e-02",
+  "gain_delta_dB": 8.871812692290195e-14,
+  "max_abs_dV": 2.4017796254920326e-14,
+  "verdict": "IDENTICAL",
+  "Vout_signal_reference": "1.503640e-02",
+  "matches_reference": true,
+  "parity_pass": true
+}

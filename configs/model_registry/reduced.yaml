@@ -1,0 +1,30 @@
+# Reduced chain model config -- the byte-identical recovery default.
+#
+# Varactor A (the A.3.1 anchor device) / lumped Bahl via / ideal open. Built through
+# the model registry, this config reproduces the canonical anchor deck byte-for-byte
+# (SHA256 CRLF D135A120..., LF 6703EDB8...; analytical coh_pk +4.8796 dB).
+#
+# Naming note: although "Varactor A" is sometimes labeled "effective_c Varactor A", it
+# is literally constructed from CJ0/VJ/M (a power-law C-V), so the registry expresses it
+# as the `power_law` variant -- the only form that reproduces the anchor byte-for-byte.
+name: reduced
+
+varactor:
+  kind: power_law          # power_law | effective_c | polynomial
+  CJ0_f: 0.3e-12
+  VJ_v: 3.5
+  M: 1.7
+  CP_f: 0.0
+  L_pkg_h: 0.3e-9
+  R_series_ohm: 0.5
+  V_bias_v: 0.0
+
+via:
+  kind: lumped_L           # lumped_L | rlc
+  # geometry-derived: Bahl L_via from (substrate.h, via_radius, topology.n_via_parallel)
+
+open_end:
+  kind: ideal              # ideal | mlef
+  # the stub MLIN simply dangles (ideal open)
+
+

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, cite this release."
+type: software
+title: "floquet-line-design: physics-guided design and verification of time-varying transmission lines"
+version: 1.0.1
+license: MIT
+repository-code: "https://github.com/wavelabnu/floquet-line-design"
+authors:
+  - family-names: Orazbayev
+    given-names: Bakhtiyar
+    affiliation: "Department of Physics, Nazarbayev University, Astana, Kazakhstan"
+    email: bakhtiyar.orazbayev@nu.edu.kz
+    orcid: "https://orcid.org/0000-0002-3597-1873"
+contact:
+  - family-names: Orazbayev
+    given-names: Bakhtiyar
+    affiliation: "Department of Physics, Nazarbayev University, Astana, Kazakhstan"
+    email: bakhtiyar.orazbayev@nu.edu.kz
+    orcid: "https://orcid.org/0000-0002-3597-1873"

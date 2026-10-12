@@ -1,0 +1,40 @@
+# Standard chain model config -- the A4 standardized termination palette.
+#
+# The standardized terminations are the DISTRIBUTED / PHYSICAL ADS elements:
+#   via=viagnd : the ADS VIAGND physical via-to-ground (1-port, grounds internally).
+#   open=mlef  : the ADS MLEF open-end-effect (fringe) element.
+#
+# These supersede the simpler, non-distributed terminations -- the lumped_L / rlc
+# vias and the ideal / mloc opens -- which are DEPRECATED (still functional; they
+# warn on instantiation and remain available for the byte-identical anchor and the
+# legacy reduced.yaml config).
+#
+# The device is the neutral canonical Varactor A (power_law), held fixed so this
+# config differs from reduced.yaml ONLY in the via + open-end axes -- i.e. it is the
+# standard-termination counterpart of the legacy reduced anchor device.
+#
+# Physical via estimates are first-pass (exact via geometry / metal to be finalized
+# from measured geometry).
+name: standard
+
+varactor:
+  kind: power_law          # neutral canonical device (Varactor A)
+  CJ0_f: 0.3e-12
+  VJ_v: 3.5
+  M: 1.7
+  CP_f: 0.0
+  L_pkg_h: 0.3e-9
+  R_series_ohm: 0.5
+  V_bias_v: 0.0
+
+via:
+  kind: viagnd             # STANDARD via (distributed/physical ADS VIAGND)
+  via_radius_m: 0.8e-3     # paper barrel radius -> emitted D = 1.6 mm
+  metal_thickness_m: 17.5e-6   # 0.5 oz copper -> emitted T = 0.0175 mm
+  rho_relative: 0.706613906162 # copper vs gold -> emitted Rho
+
+open_end:
+  kind: mlef               # STANDARD open-end (distributed ADS MLEF fringe)
+  # emitter renders MLIN+MLEF (open-end fringe); analytical adds Kirschning-Franz C_end
+
+
